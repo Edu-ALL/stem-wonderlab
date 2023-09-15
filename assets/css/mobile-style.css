@@ -57,5 +57,16 @@
         color: #fff !important;
         font-size: 1em;
     }
+
+    .project-title {
+        font-size: 1.5em;
+    }
     
+    #supported-by {
+        height: auto;
+    }
+
+    .w-md-100 {
+        width: 50%;
+    }
   }

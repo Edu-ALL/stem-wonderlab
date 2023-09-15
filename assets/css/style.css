@@ -233,3 +233,7 @@ p span {
 .icon-desc {
     font-size: 16px;
 }
+
+.w-md-100 {
+    width: 100%;
+}
