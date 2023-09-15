@@ -1,0 +1,235 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@font-face {
+    font-family: 'nulshock';
+    src: url('/assets/font/nulshock-bd.otf');
+}
+
+body, p {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.font-nulshock {
+    font-family: 'nulshock';
+}
+
+p {
+    font-size: 20px;
+}
+
+p span {
+    color: #FA6D40;
+}
+
+.navbar {
+    margin-top: -100vh;
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+
+.navbar.active {
+    margin-top: 0;
+}
+
+.nav-eduall {
+    color: white;
+}
+
+.bg-eduall {
+    background: #0c0f38 !important;
+    color: white !important;
+}
+
+.bg-eduall-secondary {
+    background: rgb(241, 133, 62);
+    background: linear-gradient(90deg, rgba(241, 133, 62, 1) 0%, rgba(235, 87, 59, 1) 35%, rgba(232, 62, 57, 1) 100%);
+    color: #fff;
+}
+
+.btn-eduall {
+    background: rgb(241, 133, 62);
+    background: linear-gradient(90deg, rgba(241, 133, 62, 1) 0%, rgba(235, 87, 59, 1) 35%, rgba(232, 62, 57, 1) 100%);
+    color: #fff !important;
+    font-size: 2em;
+}
+
+.img-banner {
+    width: 20%;
+}
+
+.asset-1 {
+    position: absolute;
+    top: -5vh;
+    left: -13vh;
+}
+
+.asset-2 {
+    position: absolute;
+    bottom: -10vh;
+    left: -15vh;
+}
+
+.asset-3 {
+    position: absolute;
+    top: -10vh;
+    right: -10vh;
+}
+
+.asset-4 {
+    position: absolute;
+    bottom: -10vh;
+    right: -10vh;
+}
+
+#home {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#nav-banner .nav-item a:hover,
+#nav-banner .nav-item a:focus,
+.nav-item a:hover,
+.nav-item a:focus {
+    color: rgb(225, 135, 38);
+}
+
+.tick {
+    padding-bottom: 1em;
+    font-size:1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.tick-label {
+    background: rgb(241, 133, 62);
+    background: linear-gradient(90deg, rgba(241, 133, 62, 1) 0%, rgba(235, 87, 59, 1) 35%, rgba(232, 62, 57, 1) 100%);
+    color: #fff !important;
+    font-size: .3em !important;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align:center;
+}
+
+.tick-group {
+    margin:0.25em;
+    text-align:center;
+}
+
+#what-is-makerspace {
+    height: auto;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.events-box {
+    padding: 40px 0;
+    background: #0c0f38;
+}
+
+.events-list {
+    color:white;
+    font-size: 20px;
+    padding: 5px 20px 7px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.border-orange {
+    border: 1px solid #cd7e09;
+    transition: all .5s ease-in-out;
+}
+
+.border-orange:hover {
+    background: #cd7e09;
+    color: white;
+}
+
+.border-green {
+    border: 1px solid #13E513;
+    transition: all .5s ease-in-out;
+}
+
+.border-green:hover {
+    background: #13E513;
+    color: white;
+}
+
+.border-blue {
+    border: 1px solid #6a13e5;
+    transition: all .5s ease-in-out;
+}
+
+.border-blue:hover {
+    background: #6a13e5;
+    color: white;
+}
+
+.border-pink {
+    border: 1px solid #e51371;
+    transition: all .5s ease-in-out;
+}
+
+.border-pink:hover {
+    background: #e51371;
+    color: white;
+}
+
+.border-yellow {
+    border: 1px solid #736a03;
+    transition: all .5s ease-in-out;
+}
+
+.border-yellow:hover {
+    background: #736a03;
+    color: white;
+}
+
+
+.project-title {
+    font-size: 4em;
+    line-height: .9;
+}
+
+.project-card .card-body {
+    height: 200px;
+}
+
+.talks img {
+    transition: all .6s ease-in-out;
+}
+
+.talks img:hover {
+    transform: scale(1.03);
+}
+
+.stem-box {
+    height: 400px;
+}
+
+.stem-learning-logo {
+    display: flex;
+    height: 70px;
+}
+
+#maps {
+    height: 100vh;
+}
+
+#supported-by {
+    height: 100vh;
+}
+
+#supported-by img {
+    transition: all 0.6s ease-in-out;
+}
+
+#supported-by img:hover {
+    transform: scale(1.04);
+}
+
+.icon-desc {
+    font-size: 16px;
+}

@@ -1,0 +1,61 @@
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0 10px !important;
+    }
+
+    .nav-eduall {
+        color: black;
+    }
+
+    #home {
+      height: 100vh;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+    
+    h4 {
+        font-size: 1.1em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    .asset-1 {
+        position: absolute;
+        top: -2vh;
+        left: -5vh;
+        width: 40%;
+    }
+    
+    .asset-2 {
+        position: absolute;
+        bottom: -2vh;
+        left: -5vh;
+        width: 40%;
+    }
+    
+    .asset-3 {
+        position: absolute;
+        top: -3vh;
+        right: -5vh;
+        width: 40%;
+    }
+    
+    .asset-4 {
+        position: absolute;
+        bottom: -2vh;
+        right: -5vh;
+        width: 40%;
+    }
+
+    .btn-eduall {
+        background: rgb(241, 133, 62);
+        background: linear-gradient(90deg, rgba(241, 133, 62, 1) 0%, rgba(235, 87, 59, 1) 35%, rgba(232, 62, 57, 1) 100%);
+        color: #fff !important;
+        font-size: 1em;
+    }
+    
+  }
