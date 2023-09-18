@@ -16,12 +16,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/countdown.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile-style.css">
 
-    <script src="assets/js/flip/flip.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/countdown.js"></script>
 </head>
 
 <body>
@@ -137,15 +138,26 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-md-6">
-                                <div class="tick" data-did-init="handleTickInit">
-                                    <div data-repeat="true" data-layout="horizontal center fit"
-                                        data-transform="preset(d, h, m, s) -> delay">
-                                        <div class="tick-group">
-                                            <div data-key="value" data-repeat="true"
-                                                data-transform="pad(00) -> split -> delay">
-                                                <span data-view="flip"></span>
-                                            </div>
-                                            <p data-key="label" data-view="text" class="tick-label mt-2 d-block"></p>
+                                <div id="countdown">
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <div class="card bg-eduall text-center py-2 px-4">
+                                            <h3 class="m-0 p-0 font-nulshock" id="days"></h3>
+                                            <small>Days</small>
+                                        </div>
+                                        <h1>:</h1>
+                                        <div class="card bg-eduall text-center py-2 px-4">
+                                            <h3 class="m-0 p-0 font-nulshock" id="hours"></h3>
+                                            <small>Hours</small>
+                                        </div>
+                                        <h1>:</h1>
+                                        <div class="card bg-eduall text-center py-2 px-4">
+                                            <h3 class="m-0 p-0 font-nulshock" id="minutes"></h3>
+                                            <small>Minutes</small>
+                                        </div>
+                                        <h1>:</h1>
+                                        <div class="card bg-eduall text-center py-2 px-4">
+                                            <h3 class="m-0 p-0 font-nulshock" id="seconds"></h3>
+                                            <small>Seconds</small>
                                         </div>
                                     </div>
                                 </div>
@@ -198,22 +210,22 @@
                             <div class="col text-center">
                                 <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Skill 1.png"
                                     alt="STEM+ Wonderlab" class="w-100">
-                                    <p class="mt-3 mb-0">Build Practical Skills</p>
+                                <p class="mt-3 mb-0">Build Practical Skills</p>
                             </div>
                             <div class="col text-center">
                                 <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Skill 2.png"
                                     alt="STEM+ Wonderlab" class="w-100">
-                                    <p class="mt-3 mb-0">Fuel Creativity</p>
+                                <p class="mt-3 mb-0">Fuel Creativity</p>
                             </div>
                             <div class="col text-center">
                                 <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Skill 3.png"
                                     alt="STEM+ Wonderlab" class="w-100">
-                                    <p class="mt-3 mb-0">Problem-Solve with Confidence</p>
+                                <p class="mt-3 mb-0">Problem-Solve with Confidence</p>
                             </div>
                             <div class="col text-center">
                                 <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Skill 4.png"
                                     alt="STEM+ Wonderlab" class="w-100">
-                                    <p class="mt-3 mb-0">Collaborate and Network</p>
+                                <p class="mt-3 mb-0">Collaborate and Network</p>
                             </div>
                         </div>
                     </div>
@@ -1490,6 +1502,7 @@
     </script>
 
     <script>
+
         document.onreadystatechange = function () {
             if (document.readyState !== "complete") {
                 Swal.fire({
@@ -1508,15 +1521,6 @@
     </script>
 
     <script>
-        function handleTickInit(tick) {
-            var eventDate = (new Date('2023-11-11 12:06:00'));
-
-            Tick.count.down(eventDate + '-01-01').onupdate = function (value) {
-                tick.value = value;
-            };
-
-        }
-
         $(function () {
             let navbar = $('#navbar')
             $(window).scroll(function () {
