@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>STEM+ WONDERLAB</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <meta name="description"
         content="A makerspace is like a creative playground where you can turn your ideas into real things. It's a special place filled with cool tools and technology that you can use to build, invent, and explore. Think of it as a workshop for your imagination!">
@@ -20,778 +21,131 @@
 
     <script src="assets/js/flip/flip.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
-    <nav id="navbar" class="navbar navbar-expand-lg bg-eduall fixed-top shadow">
-        <div class="container py-md-1 position-relative">
-            <div class="w-25">
-                <img src="assets/img/HOME/KC STEM+ logo.webp" alt="" style="width: 150px;">
-            </div>
-            <div class="d-md-none d-flex justify-content-end">
-                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <i class="text-dark bi bi-list"></i>
-                </button>
-            </div>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                        <img src="assets/img/HOME/KC STEM+ Logo color.webp" alt="" class="w-50">
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <section id="stemWonderlab" class="d-none">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-eduall fixed-top shadow">
+            <div class="container py-md-1 position-relative">
+                <div class="w-25">
+                    <img loading="lazy" src="assets/img/HOME/KC STEM+ logo.webp" alt="STEM+ Wonderlab"
+                        style="width: 150px;">
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-md-5">
-                        <li class="nav-item">
-                            <a class="nav-link nav-eduall" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-eduall" href="#what-is-makerspace">What is Makerspace?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-eduall" href="#events">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-eduall" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-eduall d-md-none d-block" href="#form">Register</a>
-                        </li>
-                    </ul>
+                <div class="d-md-none d-flex justify-content-end">
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="text-dark bi bi-list"></i>
+                    </button>
                 </div>
-            </div>
-            <div class="w-25 d-md-block d-none">
-                <img src="assets/img/HOME/Join now.png" alt=""
-                    class="position-absolute end-0 animate__animated animate__pulse animate__infinite"
-                    style="top:-8px; width: 200px;">
-                <a href="#form"
-                    class="position-absolute text-decoration-none text-white font-bold animate__animated animate__pulse animate__infinite"
-                    style="right: 4%; top:10px; font-size: 24px;">
-                    <strong>
-                        REGISTER
-                    </strong>
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <section id="home" class="position-relative">
-        <img src="assets/img/HOME/Aset home 1.webp" alt=""
-            class="img-banner animate__animated animate__pulse animate__slower animate__infinite asset-1">
-        <img src="assets/img/HOME/Aset home 2.webp" alt=""
-            class="img-banner animate__animated animate__pulse animate__slower animate__infinite asset-2">
-        <img src="assets/img/HOME/Aset home 3.webp" alt=""
-            class="img-banner animate__animated animate__pulse animate__slower animate__infinite asset-3">
-        <img src="assets/img/HOME/Aset home 4.webp" alt=""
-            class="img-banner animate__animated animate__pulse animate__slower animate__infinite asset-4">
-
-        <div id="nav-banner" class="d-md-flex justify-content-center align-items-center bg-eduall d-none">
-            <div class="d-flex justify-content-center gap-md-5 py-3">
-                <div class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#what-is-makerspace">What is Makerspace?</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#events">Events</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-            <div class="">
-                <div id="navar-content" class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-md-8">
-                            <img src="assets/img/HOME/KC STEM+ Logo allin color.webp" alt=""
-                                class="w-100 animate__animated animate__pulse animate__slow animate__infinite">
-                        </div>
-                        <div class="col-md-8 text-center mt-4">
-                            <h5 class="font-nulshock">SCIENCE, TECHNOLOGY, ENGINEERING, MATHEMATICS AND ART</h5>
-                        </div>
-                        <div class="col-md-8">
-                            <button class="btn btn-lg btn-eduall btn-block w-100 rounded-pill py-1 shadow-lg">
-                                Indonesia's FIRST Student Makerspace Expo
-                            </button>
-                        </div>
-                        <div class="col-md-8 text-center my-4 font-nulshock">
-                            <h5>SATURDAY, 11 NOVEMBER 2023 | 12:06 PM</h5>
-                            <h5>CIPUTRA ARTPRENEUR</h5>
-                        </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <img loading="lazy" src="assets/img/HOME/KC STEM+ Logo color.webp" alt="STEM+ Wonderlab"
+                                class="w-50">
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-md-5">
+                            <li class="nav-item">
+                                <a class="nav-link nav-eduall" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-eduall" href="#what-is-makerspace">What is Makerspace?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-eduall" href="#events">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-eduall" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-eduall d-md-none d-block" href="#form">Register</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <div class="w-25 d-md-block d-none">
+                    <img loading="lazy" src="assets/img/HOME/Join now.png" alt="STEM+ Wonderlab"
+                        class="position-absolute end-0 animate__animated animate__pulse animate__infinite"
+                        style="top:-8px; width: 200px;">
+                    <a href="#form"
+                        class="position-absolute text-decoration-none text-white font-bold animate__animated animate__pulse animate__infinite"
+                        style="right: 4%; top:10px; font-size: 24px;">
+                        <strong>
+                            REGISTER
+                        </strong>
+                    </a>
+                </div>
+            </div>
+        </nav>
 
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6">
-                            <div class="tick" data-did-init="handleTickInit">
-                                <div data-repeat="true" data-layout="horizontal center fit"
-                                    data-transform="preset(d, h, m, s) -> delay">
-                                    <div class="tick-group">
-                                        <div data-key="value" data-repeat="true"
-                                            data-transform="pad(00) -> split -> delay">
-                                            <span data-view="flip"></span>
-                                        </div>
-                                        <p data-key="label" data-view="text" class="tick-label mt-2 d-block"></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <section id="home" class="position-relative">
+            <img src="assets/img/HOME/Aset home 1.webp" alt="STEM+ Wonderlab"
+                class="img-banner animate__animated animate__pulse animate__slower animate__infinite asset-1">
+            <img src="assets/img/HOME/Aset home 2.webp" alt="STEM+ Wonderlab"
+                class="img-banner animate__animated animate__pulse animate__slower animate__infinite asset-2">
+            <img src="assets/img/HOME/Aset home 3.webp" alt="STEM+ Wonderlab"
+                class="img-banner animate__animated animate__pulse animate__slower animate__infinite asset-3">
+            <img src="assets/img/HOME/Aset home 4.webp" alt="STEM+ Wonderlab"
+                class="img-banner animate__animated animate__pulse animate__slower animate__infinite asset-4">
+
+            <div id="nav-banner" class="d-md-flex justify-content-center align-items-center bg-eduall d-none">
+                <div class="d-flex justify-content-center gap-md-5 py-3">
+                    <div class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#what-is-makerspace">What is Makerspace?</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </section>
-
-    <section id="what-is-makerspace">
-        <div class="container pt-5 mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-7 position-relative">
-                    <div class="text-center">
-                        <h1 class="font-nulshock" style="position: relative; z-index: 2;">WHAT IS A MAKERSPACE?</h1>
-                        <div class="d-flex justify-content-center">
-                            <img src="assets/img/WHAT IS MAKERSPACE/Video stem.webp" alt="" srcset=""
-                                class="w-75 cursor-pointer" style="margin-top:-50px; z-index: 1;" data-bs-toggle="modal"
-                                data-bs-target="#videoBox" data-aos="fade-up">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-8 text-center mt-5">
-                    <p data-aos="fade-up">
-                        A makerspace is like a <span>creative playground</span> where you can turn your ideas into real
-                        things. It's a special place filled with cool tools and technology that you can use to
-                        <span>build, invent, and explore.</span> Think of it as a workshop for your imagination!
-                    </p>
-
-                    <p data-aos="fade-up">
-                        Explore the STEM+ Wonderlab, a place where creativity meets innovation, and hands-on learning
-                        unfolds. Here, students from middle school to university can dive into a world of cutting-edge
-                        tools and technologies, connect with like-minded individuals, brainstorm ideas, collaborate on
-                        thrilling projects, and pave the way for real-world solutions—all to build the skills essential
-                        for top university application and future careers.
-                    </p>
-                </div>
-
-                <div class="col-md-10 my-5">
-                    <div class="row row-cols-md-4 row-cols-2 g-3">
-                        <div class="col">
-                            <img src="assets/img/WHAT IS MAKERSPACE/Skill 1.png" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/WHAT IS MAKERSPACE/Skill 2.png" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/WHAT IS MAKERSPACE/Skill 3.png" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/WHAT IS MAKERSPACE/Skill 4.png" alt="" class="w-100">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal modal-lg fade" id="videoBox" tabindex="-1" aria-labelledby="videoBoxLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content p-1">
-                    <iframe width="100%" height="400"
-                        src="https://www.youtube.com/embed/8X_Ah8cl7aw?si=LUl6L7ywK7MgHsec" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen class="rounded-2"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="events" class="position-relative">
-        <img src="assets/img/MAPS/tangan 1.png" alt=""
-            class="position-absolute start-0 animate__animated animate__shakeY animate__infinite d-md-block d-none"
-            style="top:20vh; --animate-duration:20s">
-        <img src="assets/img/MAPS/tangan 3.png" alt=""
-            class="position-absolute end-0 animate__animated animate__shakeY animate__infinite d-md-block d-none"
-            style="top:20vh; --animate-duration:20s">
-        <div class="container-fluid my-5 p-0">
-            <div class="text-center pb-md-3 pt-md-5 p-md-0 p-3">
-                <h1 class="font-nulshock">WHAT’S HAPPENING at</h1>
-            </div>
-
-            <div class="events-box p-md-2 p-3">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 px-md-0 px-5">
-                            <img src="assets/img/HOME/KC STEM+ logo.webp" alt="" class="w-100">
-                        </div>
-                        <div class="col-md-8 mt-5">
-                            <div
-                                class="events-list border-orange d-flex justify-content-between gap-3 align-items-center">
-                                <div class="d-flex align-items-center gap-2">
-                                    <svg width="15" height="15" viewBox="0 0 17 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.76343 1.54932L14.7909 15.5393M14.7909 15.5393V2.10892M14.7909 15.5393H2.28453"
-                                            stroke="white" stroke-width="3" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    Project Showcase
-                                </div>
-                                <div class="">
-                                    STEM+ AREA
-                                </div>
+            <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+                <div class="">
+                    <div id="navar-content" class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-8">
+                                <img loading="lazy" src="assets/img/HOME/KC STEM+ Logo allin color.webp"
+                                    alt="STEM+ Wonderlab"
+                                    class="w-100 animate__animated animate__pulse animate__slow animate__infinite">
                             </div>
-                            <div
-                                class="events-list border-green d-flex justify-content-between gap-3 align-items-center">
-                                <div class="d-flex align-items-center gap-2">
-                                    <svg width="15" height="15" viewBox="0 0 17 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.76343 1.54932L14.7909 15.5393M14.7909 15.5393V2.10892M14.7909 15.5393H2.28453"
-                                            stroke="white" stroke-width="3" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    Collaborative Real-World Challenge
-                                </div>
-                                <div class="">
-                                    STEM+ AREA
-                                </div>
+                            <div class="col-md-8 text-center mt-4">
+                                <h5 class="font-nulshock">SCIENCE, TECHNOLOGY, ENGINEERING, MATHEMATICS AND ART</h5>
                             </div>
-                            <div
-                                class="events-list border-blue d-flex justify-content-between gap-3 align-items-center">
-                                <div class="d-flex align-items-center gap-2">
-                                    <svg width="15" height="15" viewBox="0 0 17 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.76343 1.54932L14.7909 15.5393M14.7909 15.5393V2.10892M14.7909 15.5393H2.28453"
-                                            stroke="white" stroke-width="3" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    Parenting & Educational Talks
-                                </div>
-                                <div class="">
-                                    STEM+ STAGE
-                                </div>
+                            <div class="col-md-8">
+                                <button class="btn btn-lg btn-eduall btn-block w-100 rounded-pill py-1 shadow-lg">
+                                    Indonesia's FIRST Student Makerspace Expo
+                                </button>
                             </div>
-                            <div
-                                class="events-list border-pink d-flex justify-content-between gap-3 align-items-center">
-                                <div class="d-flex align-items-center gap-2">
-                                    <svg width="15" height="15" viewBox="0 0 17 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.76343 1.54932L14.7909 15.5393M14.7909 15.5393V2.10892M14.7909 15.5393H2.28453"
-                                            stroke="white" stroke-width="3" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    STEM-based Tools Demonstration booth
-                                </div>
-                                <div class="">
-                                    WONDERLAB AREA
-                                </div>
-                            </div>
-                            <div
-                                class="events-list border-yellow d-flex justify-content-between gap-3 align-items-center">
-                                <div class="d-flex align-items-center gap-2">
-                                    <svg width="15" height="15" viewBox="0 0 17 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.76343 1.54932L14.7909 15.5393M14.7909 15.5393V2.10892M14.7909 15.5393H2.28453"
-                                            stroke="white" stroke-width="3" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    ‘STEM Learning Lab’ Workshops
-                                </div>
-                                <div class="">
-                                    WONDERLAB STAGE
-                                </div>
+                            <div class="col-md-8 text-center my-4 font-nulshock">
+                                <h5>SATURDAY, 11 NOVEMBER 2023 | 12:06 PM</h5>
+                                <h5>CIPUTRA ARTPRENEUR</h5>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="projects" class="position-relative">
-        <div class="container py-5">
-            <img src="assets/img/PROJECT SHOWCASE/project-showcase.png" alt=""
-                class="w-25 position-absolute end-0 animate__animated animate__shakeY animate__infinite"
-                style="top:-20vh; --animate-duration: 20s;">
-            <div class="row justify-content-center px-md-0 px-2">
-                <div class="col-md-8">
-                    <h1 class="project-title mt-5 font-nulshock">
-                        Changemakers Passion Project Exhibition
-                    </h1>
-                    <h5 class="mt-4 font-nulshock">
-                        Highlighting the essence of hands-on learning and innovation, witness captivating creations by
-                        our talented mentees and be inspired to create yours!
-                    </h5>
-                </div>
-
-                <div class="col-md-8 mt-5">
-                    <div class="row row-cols-md-3 row-cols-1 g-3 justify-content-center">
-                        <div class="col">
-                            <div class="card project-card shadow border-0">
-                                <div class="card-body text-center">
-                                    <div class="d-flex align-items-center h-100 justify-content-center">
-                                        <h4 class="font-nulshock">
-                                            LABOPOLY
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
-                                    data-bs-toggle="modal" data-bs-target="#project1">
-                                    Read More
-                                </div>
-                            </div>
-
-                            <!-- Modal  -->
-                            <div class="modal modal-lg fade" id="project1" tabindex="-1" aria-labelledby="project1Label"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content bg-eduall p-4">
-                                        <div class="modal-body">
-                                            <div class="row align-items-center g-5">
-                                                <div class="col-md-9" style="border-right: 1px solid #dededec7;">
-                                                    <h2 class="font-nulshock">LABOPOLY</h2>
-                                                    Life science is an area that is mostly associated with studying at
-                                                    school and is less interesting among students. This is because most
-                                                    of the sources to learn biology or chemistry are limited to school
-                                                    laboratories or textbooks; therefore translating it into a board
-                                                    game might potentially attract more students to this discipline.
-                                                    This monopoly-based game could serve as a tool to provide accessible
-                                                    life science education to all social levels and increase people's
-                                                    interest in science.
-
-                                                    <div class="row mt-3">
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                    </div>
-                                                    <div class="text-end mt-3">
-                                                        <button class="btn btn-light py-1" data-bs-dismiss="modal">
-                                                            <i class="bi bi-x"></i>
-                                                            Close
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="mentee-box text-center mb-4">
-                                                        <img src="https://picsum.photos/120/120" alt=""
-                                                            class="w-50 rounded-2"> <br>
-                                                        <small>Evangeline Yao</small>
-                                                    </div>
-                                                    <div class="mentee-box text-center mb-4">
-                                                        <img src="https://picsum.photos/120/120" alt=""
-                                                            class="w-50 rounded-2"> <br>
-                                                        <small>Azalea Juzar</small>
-                                                    </div>
-                                                    <div class="mentee-box text-center mb-4">
-                                                        <img src="https://picsum.photos/120/120" alt=""
-                                                            class="w-50 rounded-2"> <br>
-                                                        <small>Queenina Gunawan</small>
-                                                    </div>
-                                                </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="tick" data-did-init="handleTickInit">
+                                    <div data-repeat="true" data-layout="horizontal center fit"
+                                        data-transform="preset(d, h, m, s) -> delay">
+                                        <div class="tick-group">
+                                            <div data-key="value" data-repeat="true"
+                                                data-transform="pad(00) -> split -> delay">
+                                                <span data-view="flip"></span>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card project-card shadow border-0">
-                                <div class="card-body text-center">
-                                    <div class="d-flex align-items-center h-100 justify-content-center">
-                                        <h4 class="font-nulshock">
-                                            PRODAT
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
-                                    data-bs-toggle="modal" data-bs-target="#project2">
-                                    Read More
-                                </div>
-                            </div>
-
-                            <!-- Modal  -->
-                            <div class="modal modal-lg fade" id="project2" tabindex="-1" aria-labelledby="project2Label"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content bg-eduall p-4">
-                                        <div class="modal-body">
-                                            <div class="row align-items-center g-5">
-                                                <div class="col-md-9" style="border-right: 1px solid #dededec7;">
-                                                    <h2 class="font-nulshock">
-                                                        PRODAT
-                                                    </h2>
-                                                    Rooted in the challenges faced by an IB student seeking unblocked
-                                                    resources, Prodat Web emerges as an integrated platform, combining
-                                                    blogs and a community app. It offers a collective space for
-                                                    organizations and students to collaborate, providing solutions
-                                                    ranging from complex questions to the quest for enriching
-                                                    activities. At its core, Prodat Blog caters to IGCSE and IB students
-                                                    aspiring for STEM and entrepreneurship careers, offering a gamified
-                                                    repository of blog posts, textbooks, courses, and career guidance,
-                                                    tailored to individual ambitions and delivering a holistic
-                                                    educational experience.
-
-                                                    <div class="row mt-3">
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                    </div>
-                                                    <div class="text-end mt-3">
-                                                        <button class="btn btn-light py-1" data-bs-dismiss="modal">
-                                                            <i class="bi bi-x"></i>
-                                                            Close
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="mentee-box text-center mb-4">
-                                                        <img src="https://picsum.photos/120/120" alt=""
-                                                            class="w-50 rounded-2"> <br>
-                                                        <small>Maxwell Brian Wijaya</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card project-card shadow border-0">
-                                <div class="card-body text-center">
-                                    <div class="d-flex align-items-center h-100 justify-content-center">
-                                        <h4 class="font-nulshock">
-                                            NOODLY
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
-                                    data-bs-toggle="modal" data-bs-target="#project3">
-                                    Read More
-                                </div>
-                            </div>
-
-                            <!-- Modal  -->
-                            <div class="modal modal-lg fade" id="project3" tabindex="-1" aria-labelledby="project3Label"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content bg-eduall p-4">
-                                        <div class="modal-body">
-                                            <div class="row align-items-center g-5">
-                                                <div class="col-md-9" style="border-right: 1px solid #dededec7;">
-                                                    <h2 class="font-nulshock">NOODLY</h2>
-                                                    A profound love for instant noodles, although a guilty pleasure,
-                                                    sparked the drive to redefine perceptions and erase guilt from the
-                                                    equation. Thus, Noodly was born—the MSG-free, preservative-free cup
-                                                    noodle, a project that stems from a desire to transform personal
-                                                    passion into purpose. This endeavor offers a healthier and more
-                                                    conscious choice in the instant noodle market. Rooted in
-                                                    collaboration and responsibility, Noodly strives to wield a
-                                                    substantial impact on the instant noodle industry and consumer
-                                                    lifestyles.
-
-                                                    <div class="row mt-3">
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                    </div>
-                                                    <div class="text-end mt-3">
-                                                        <button class="btn btn-light py-1" data-bs-dismiss="modal">
-                                                            <i class="bi bi-x"></i>
-                                                            Close
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="mentee-box text-center mb-4">
-                                                        <img src="https://picsum.photos/120/120" alt=""
-                                                            class="w-50 rounded-2"> <br>
-                                                        <small>Kayla Kwok</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card project-card shadow border-0">
-                                <div class="card-body text-center">
-                                    <div class="d-flex align-items-center h-100 justify-content-center">
-                                        <h4 class="font-nulshock">
-                                            MUZARTT
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
-                                    data-bs-toggle="modal" data-bs-target="#project4">
-                                    Read More
-                                </div>
-                            </div>
-
-                            <!-- Modal  -->
-                            <div class="modal modal-lg fade" id="project4" tabindex="-1" aria-labelledby="project4Label"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content bg-eduall p-4">
-                                        <div class="modal-body">
-                                            <div class="row align-items-center g-5">
-                                                <div class="col-md-9" style="border-right: 1px solid #dededec7;">
-                                                    <h2 class="font-nulshock">MUZARTT</h2>
-                                                    Conceived in response to the lack of accessible therapy and
-                                                    technology for seniors, Muzartt is a mobile application that
-                                                    harnesses the therapeutic power of music and art to enhance the
-                                                    well-being of older individuals. Muzartt's mission is clear: to
-                                                    provide accessible, virtual, and high-quality music and art therapy,
-                                                    partnering with healthcare organizations and caretakers to promote
-                                                    holistic well-being and personal growth among older adults
-                                                    worldwide.
-
-                                                    <div class="row mt-3">
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                    </div>
-                                                    <div class="text-end mt-3">
-                                                        <button class="btn btn-light py-1" data-bs-dismiss="modal">
-                                                            <i class="bi bi-x"></i>
-                                                            Close
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="mentee-box text-center mb-4">
-                                                        <img src="https://picsum.photos/120/120" alt=""
-                                                            class="w-50 rounded-2"> <br>
-                                                        <small>Claudia Angelica</small>
-                                                    </div>
-                                                    <div class="mentee-box text-center mb-4">
-                                                        <img src="https://picsum.photos/120/120" alt=""
-                                                            class="w-50 rounded-2"> <br>
-                                                        <small>Kenzo Eugenio Tjandra</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card project-card shadow border-0">
-                                <div class="card-body text-center">
-                                    <div class="d-flex align-items-center h-100 justify-content-center">
-                                        <h4 class="font-nulshock">
-                                            WETHEGENESIS
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
-                                    data-bs-toggle="modal" data-bs-target="#project5">
-                                    Read More
-                                </div>
-                            </div>
-
-                            <!-- Modal  -->
-                            <div class="modal modal-lg fade" id="project5" tabindex="-1" aria-labelledby="project5Label"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content bg-eduall p-4">
-                                        <div class="modal-body">
-                                            <div class="row align-items-center g-5">
-                                                <div class="col-md-9" style="border-right: 1px solid #dededec7;">
-                                                    <h2 class="font-nulshock">WETHEGENESIS</h2>
-                                                    Established in 2020, We The Genesis is a youth-to-youth media
-                                                    initiative devoted to magnifying youthful dreams, sparking
-                                                    creativity, and igniting empathetic ambition. Our platform empowers
-                                                    the younger generation as it encourages self-discovery, promotes
-                                                    positive change, and fosters empathy through diverse perspectives.
-                                                    Through thought-provoking content, We The Genesis nurtures action
-                                                    and empathy, empowering youth to play a vital role in building an
-                                                    inclusive and informed society.
-
-                                                    <div class="row mt-3">
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                    </div>
-                                                    <div class="text-end mt-3">
-                                                        <button class="btn btn-light py-1" data-bs-dismiss="modal">
-                                                            <i class="bi bi-x"></i>
-                                                            Close
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="mentee-box text-center mb-4">
-                                                        <img src="https://picsum.photos/120/120" alt=""
-                                                            class="w-50 rounded-2"> <br>
-                                                        <small>Danya Tjokroadi</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card project-card shadow border-0">
-                                <div class="card-body text-center">
-                                    <div class="d-flex align-items-center h-100 justify-content-center">
-                                        <h4 class="font-nulshock">
-                                            GREEN ARCHIVE
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
-                                    data-bs-toggle="modal" data-bs-target="#project6">
-                                    Read More
-                                </div>
-                            </div>
-
-                            <!-- Modal  -->
-                            <div class="modal modal-lg fade" id="project6" tabindex="-1" aria-labelledby="project6Label"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content bg-eduall p-4">
-                                        <div class="modal-body">
-                                            <div class="row align-items-center g-5">
-                                                <div class="col-md-9" style="border-right: 1px solid #dededec7;">
-                                                    <h2 class="font-nulshock">GREEN ARCHIVE</h2>
-                                                    The Green Archive was created to increase awareness regarding the
-                                                    urgency of climate change, and also provide a specially-designed
-                                                    tote bag as an alternative to plastic bags in hopes of reducing
-                                                    plastic waste. Through the gamification feature, it could help
-                                                    motivate people to actually take action against global warming and
-                                                    integrate those simple actions into their daily lifestyle.
-
-                                                    <div class="row mt-3">
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                    </div>
-                                                    <div class="text-end mt-3">
-                                                        <button class="btn btn-light py-1" data-bs-dismiss="modal">
-                                                            <i class="bi bi-x"></i>
-                                                            Close
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="mentee-box text-center mb-4">
-                                                        <img src="https://picsum.photos/120/120" alt=""
-                                                            class="w-50 rounded-2"> <br>
-                                                        <small>Stephanie Sastra</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card project-card shadow border-0">
-                                <div class="card-body text-center">
-                                    <div class="d-flex align-items-center h-100 justify-content-center">
-                                        <h4 class="font-nulshock">
-                                            HEART4HEART
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
-                                    data-bs-toggle="modal" data-bs-target="#project7">
-                                    Read More
-                                </div>
-                            </div>
-
-                            <!-- Modal  -->
-                            <div class="modal modal-lg fade" id="project7" tabindex="-1" aria-labelledby="project7Label"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content bg-eduall p-4">
-                                        <div class="modal-body">
-                                            <div class="row align-items-center g-5">
-                                                <div class="col-md-9" style="border-right: 1px solid #dededec7;">
-                                                    <h2 class="font-nulshock">HEART4HEART</h2>
-                                                    Heart4Heart is a transformative initiative dedicated to fostering
-                                                    mental health improvement and awareness on a widespread scale.
-                                                    Through Heart4Heart, diverse communities engage in impactful
-                                                    workshops and activities, illuminating the essence of mental
-                                                    well-being. Born out of a realization that individuals often
-                                                    sideline their own mental health amidst life's demands, this project
-                                                    seeks to recalibrate priorities. The project aspires for its
-                                                    workshops and activities to serve as a constructive, enjoyable, and
-                                                    enlightening avenue for individuals to engage in learning about
-                                                    mental health and promoting its awareness.
-
-                                                    <div class="row mt-3">
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <img src="https://picsum.photos/200/120" alt=""
-                                                                class="w-100 rounded">
-                                                        </div>
-                                                    </div>
-                                                    <div class="text-end mt-3">
-                                                        <button class="btn btn-light py-1" data-bs-dismiss="modal">
-                                                            <i class="bi bi-x"></i>
-                                                            Close
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="mentee-box text-center mb-4">
-                                                        <img src="https://picsum.photos/120/120" alt=""
-                                                            class="w-50 rounded-2"> <br>
-                                                        <small>Hanaa Nabina</small>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <p data-key="label" data-view="text" class="tick-label mt-2 d-block"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -800,577 +154,1307 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="talks" class="position-relative">
-        <div class="container my-5 py-5">
-            <img src="assets/img/TALKS/talks 1.png" alt=""
+        </section>
+
+        <section id="what-is-makerspace">
+            <div class="container pt-5 mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 position-relative">
+                        <div class="text-center">
+                            <h1 class="font-nulshock" style="position: relative; z-index: 2;">WHAT IS A MAKERSPACE?</h1>
+                            <div class="d-flex justify-content-center">
+                                <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Video stem.webp"
+                                    alt="STEM+ Wonderlab" srcset="" class="w-75 cursor-pointer"
+                                    style="margin-top:-50px; z-index: 1;" data-bs-toggle="modal"
+                                    data-bs-target="#videoBox" data-aos="fade-up">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 text-center mt-5">
+                        <p data-aos="fade-up">
+                            A makerspace is like a <span>creative playground</span> where you can turn your ideas into
+                            real
+                            things. It's a special place filled with cool tools and technology that you can use to
+                            <span>build, invent, and explore.</span> Think of it as a workshop for your imagination!
+                        </p>
+
+                        <p data-aos="fade-up">
+                            Explore the STEM+ Wonderlab, a place where creativity meets innovation, and hands-on
+                            learning
+                            unfolds. Here, students from middle school to university can dive into a world of
+                            cutting-edge
+                            tools and technologies, connect with like-minded individuals, brainstorm ideas, collaborate
+                            on
+                            thrilling projects, and pave the way for real-world solutions—all to build the skills
+                            essential
+                            for top university application and future careers.
+                        </p>
+                    </div>
+
+                    <div class="col-md-10 my-5">
+                        <div class="row row-cols-md-4 row-cols-2 g-3">
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Skill 1.png"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Skill 2.png"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Skill 3.png"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Skill 4.png"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal modal-lg fade" id="videoBox" tabindex="-1" aria-labelledby="videoBoxLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content p-1">
+                        <iframe width="100%" height="400"
+                            src="https://www.youtube.com/embed/8X_Ah8cl7aw?si=LUl6L7ywK7MgHsec"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen class="rounded-2"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="position-relative">
+            <img loading="lazy" src="assets/img/MAPS/tangan 1.png" alt="STEM+ Wonderlab"
                 class="position-absolute start-0 animate__animated animate__shakeY animate__infinite d-md-block d-none"
-                style="top:-20vh; width: 20%; --animate-duration:20s;">
-            <div class="row justify-content-center px-md-0 px-3">
-                <div class="col-md-1"></div>
-                <div class="col-md-7">
-                    <h1 class="project-title mt-5 font-nulshock">
-                        PARENTING & EDUCATIONAL TALKS
-                    </h1>
-                    <h5 class="mt-4 font-nulshock">
-                        Valuable insights into nurturing youths, equipping parents with the tools needed!
-                    </h5>
+                style="top:20vh; --animate-duration:20s">
+            <img loading="lazy" src="assets/img/MAPS/tangan 3.png" alt="STEM+ Wonderlab"
+                class="position-absolute end-0 animate__animated animate__shakeY animate__infinite d-md-block d-none"
+                style="top:20vh; --animate-duration:20s">
+            <div class="container-fluid my-5 p-0">
+                <div class="text-center pb-md-3 pt-md-5 p-md-0 p-3">
+                    <h1 class="font-nulshock">WHAT’S HAPPENING at</h1>
                 </div>
-                <div class="col-md-8 mt-5">
-                    <div class="mb-3 talks">
-                        <img src="assets/img/TALKS/Talks 1.webp" alt="" class="w-100 d-md-block d-none">
-                        <img src="assets/img/TALKS/Talks 1 mobile ver.webp" alt="" class="w-100 d-md-none d-block">
+
+                <div class="events-box p-md-2 p-3">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 px-md-0 px-5">
+                                <img loading="lazy" src="assets/img/HOME/KC STEM+ logo.webp" alt="STEM+ Wonderlab"
+                                    class="w-100">
+                            </div>
+                            <div class="col-md-8 mt-5">
+                                <div
+                                    class="events-list border-orange d-flex justify-content-between gap-3 align-items-center">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <svg width="15" height="15" viewBox="0 0 17 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.76343 1.54932L14.7909 15.5393M14.7909 15.5393V2.10892M14.7909 15.5393H2.28453"
+                                                stroke="white" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        Project Showcase
+                                    </div>
+                                    <div class="">
+                                        STEM+ AREA
+                                    </div>
+                                </div>
+                                <div
+                                    class="events-list border-green d-flex justify-content-between gap-3 align-items-center">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <svg width="15" height="15" viewBox="0 0 17 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.76343 1.54932L14.7909 15.5393M14.7909 15.5393V2.10892M14.7909 15.5393H2.28453"
+                                                stroke="white" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        Collaborative Real-World Challenge
+                                    </div>
+                                    <div class="">
+                                        STEM+ AREA
+                                    </div>
+                                </div>
+                                <div
+                                    class="events-list border-blue d-flex justify-content-between gap-3 align-items-center">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <svg width="15" height="15" viewBox="0 0 17 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.76343 1.54932L14.7909 15.5393M14.7909 15.5393V2.10892M14.7909 15.5393H2.28453"
+                                                stroke="white" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        Parenting & Educational Talks
+                                    </div>
+                                    <div class="">
+                                        STEM+ STAGE
+                                    </div>
+                                </div>
+                                <div
+                                    class="events-list border-pink d-flex justify-content-between gap-3 align-items-center">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <svg width="15" height="15" viewBox="0 0 17 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.76343 1.54932L14.7909 15.5393M14.7909 15.5393V2.10892M14.7909 15.5393H2.28453"
+                                                stroke="white" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        STEM-based Tools Demonstration booth
+                                    </div>
+                                    <div class="">
+                                        WONDERLAB AREA
+                                    </div>
+                                </div>
+                                <div
+                                    class="events-list border-yellow d-flex justify-content-between gap-3 align-items-center">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <svg width="15" height="15" viewBox="0 0 17 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.76343 1.54932L14.7909 15.5393M14.7909 15.5393V2.10892M14.7909 15.5393H2.28453"
+                                                stroke="white" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        ‘STEM Learning Lab’ Workshops
+                                    </div>
+                                    <div class="">
+                                        WONDERLAB STAGE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3 talks">
-                        <img src="assets/img/TALKS/Talks 2.webp" alt="" class="w-100 d-md-block d-none">
-                        <img src="assets/img/TALKS/Talks 2 mobile ver.webp" alt="" class="w-100 d-md-none d-block">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="position-relative">
+            <div class="container py-5">
+                <img loading="lazy" src="assets/img/PROJECT SHOWCASE/project-showcase.png" alt="STEM+ Wonderlab"
+                    class="w-25 position-absolute end-0 animate__animated animate__shakeY animate__infinite"
+                    style="top:-20vh; --animate-duration: 20s;">
+                <div class="row justify-content-center px-md-0 px-2">
+                    <div class="col-md-8">
+                        <h1 class="project-title mt-5 font-nulshock">
+                            Changemakers Passion Project Exhibition
+                        </h1>
+                        <h5 class="mt-4 font-nulshock">
+                            Highlighting the essence of hands-on learning and innovation, witness captivating creations
+                            by
+                            our talented mentees and be inspired to create yours!
+                        </h5>
+                    </div>
+
+                    <div class="col-md-8 mt-5">
+                        <div class="row row-cols-md-3 row-cols-1 g-3 justify-content-center">
+                            <div class="col">
+                                <div class="card project-card shadow border-0">
+                                    <div class="card-body text-center">
+                                        <div class="d-flex align-items-center h-100 justify-content-center">
+                                            <h4 class="font-nulshock">
+                                                LABOPOLY
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
+                                        data-bs-toggle="modal" data-bs-target="#project1">
+                                        Read More
+                                    </div>
+                                </div>
+
+                                <!-- Modal  -->
+                                <div class="modal modal-lg fade" id="project1" tabindex="-1"
+                                    aria-labelledby="project1Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-eduall p-4">
+                                            <div class="modal-body">
+                                                <div class="row align-items-center g-5">
+                                                    <div class="col-md-9" style="border-right: 1px solid #dededec7;">
+                                                        <h2 class="font-nulshock">LABOPOLY</h2>
+                                                        Life science is an area that is mostly associated with studying
+                                                        at
+                                                        school and is less interesting among students. This is because
+                                                        most
+                                                        of the sources to learn biology or chemistry are limited to
+                                                        school
+                                                        laboratories or textbooks; therefore translating it into a board
+                                                        game might potentially attract more students to this discipline.
+                                                        This monopoly-based game could serve as a tool to provide
+                                                        accessible
+                                                        life science education to all social levels and increase
+                                                        people's
+                                                        interest in science.
+
+                                                        <div class="row mt-3">
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end mt-3">
+                                                            <button class="btn btn-light py-1" data-bs-dismiss="modal">
+                                                                <i class="bi bi-x"></i>
+                                                                Close
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="mentee-box text-center mb-4">
+                                                            <img loading="lazy" src="https://picsum.photos/120/120"
+                                                                alt="STEM+ Wonderlab" class="w-50 rounded-2"> <br>
+                                                            <small>Evangeline Yao</small>
+                                                        </div>
+                                                        <div class="mentee-box text-center mb-4">
+                                                            <img loading="lazy" src="https://picsum.photos/120/120"
+                                                                alt="STEM+ Wonderlab" class="w-50 rounded-2"> <br>
+                                                            <small>Azalea Juzar</small>
+                                                        </div>
+                                                        <div class="mentee-box text-center mb-4">
+                                                            <img loading="lazy" src="https://picsum.photos/120/120"
+                                                                alt="STEM+ Wonderlab" class="w-50 rounded-2"> <br>
+                                                            <small>Queenina Gunawan</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card project-card shadow border-0">
+                                    <div class="card-body text-center">
+                                        <div class="d-flex align-items-center h-100 justify-content-center">
+                                            <h4 class="font-nulshock">
+                                                PRODAT
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
+                                        data-bs-toggle="modal" data-bs-target="#project2">
+                                        Read More
+                                    </div>
+                                </div>
+
+                                <!-- Modal  -->
+                                <div class="modal modal-lg fade" id="project2" tabindex="-1"
+                                    aria-labelledby="project2Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-eduall p-4">
+                                            <div class="modal-body">
+                                                <div class="row align-items-center g-5">
+                                                    <div class="col-md-9" style="border-right: 1px solid #dededec7;">
+                                                        <h2 class="font-nulshock">
+                                                            PRODAT
+                                                        </h2>
+                                                        Rooted in the challenges faced by an IB student seeking
+                                                        unblocked
+                                                        resources, Prodat Web emerges as an integrated platform,
+                                                        combining
+                                                        blogs and a community app. It offers a collective space for
+                                                        organizations and students to collaborate, providing solutions
+                                                        ranging from complex questions to the quest for enriching
+                                                        activities. At its core, Prodat Blog caters to IGCSE and IB
+                                                        students
+                                                        aspiring for STEM and entrepreneurship careers, offering a
+                                                        gamified
+                                                        repository of blog posts, textbooks, courses, and career
+                                                        guidance,
+                                                        tailored to individual ambitions and delivering a holistic
+                                                        educational experience.
+
+                                                        <div class="row mt-3">
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end mt-3">
+                                                            <button class="btn btn-light py-1" data-bs-dismiss="modal">
+                                                                <i class="bi bi-x"></i>
+                                                                Close
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="mentee-box text-center mb-4">
+                                                            <img loading="lazy" src="https://picsum.photos/120/120"
+                                                                alt="STEM+ Wonderlab" class="w-50 rounded-2"> <br>
+                                                            <small>Maxwell Brian Wijaya</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card project-card shadow border-0">
+                                    <div class="card-body text-center">
+                                        <div class="d-flex align-items-center h-100 justify-content-center">
+                                            <h4 class="font-nulshock">
+                                                NOODLY
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
+                                        data-bs-toggle="modal" data-bs-target="#project3">
+                                        Read More
+                                    </div>
+                                </div>
+
+                                <!-- Modal  -->
+                                <div class="modal modal-lg fade" id="project3" tabindex="-1"
+                                    aria-labelledby="project3Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-eduall p-4">
+                                            <div class="modal-body">
+                                                <div class="row align-items-center g-5">
+                                                    <div class="col-md-9" style="border-right: 1px solid #dededec7;">
+                                                        <h2 class="font-nulshock">NOODLY</h2>
+                                                        A profound love for instant noodles, although a guilty pleasure,
+                                                        sparked the drive to redefine perceptions and erase guilt from
+                                                        the
+                                                        equation. Thus, Noodly was born—the MSG-free, preservative-free
+                                                        cup
+                                                        noodle, a project that stems from a desire to transform personal
+                                                        passion into purpose. This endeavor offers a healthier and more
+                                                        conscious choice in the instant noodle market. Rooted in
+                                                        collaboration and responsibility, Noodly strives to wield a
+                                                        substantial impact on the instant noodle industry and consumer
+                                                        lifestyles.
+
+                                                        <div class="row mt-3">
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end mt-3">
+                                                            <button class="btn btn-light py-1" data-bs-dismiss="modal">
+                                                                <i class="bi bi-x"></i>
+                                                                Close
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="mentee-box text-center mb-4">
+                                                            <img loading="lazy" src="https://picsum.photos/120/120"
+                                                                alt="STEM+ Wonderlab" class="w-50 rounded-2"> <br>
+                                                            <small>Kayla Kwok</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card project-card shadow border-0">
+                                    <div class="card-body text-center">
+                                        <div class="d-flex align-items-center h-100 justify-content-center">
+                                            <h4 class="font-nulshock">
+                                                MUZARTT
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
+                                        data-bs-toggle="modal" data-bs-target="#project4">
+                                        Read More
+                                    </div>
+                                </div>
+
+                                <!-- Modal  -->
+                                <div class="modal modal-lg fade" id="project4" tabindex="-1"
+                                    aria-labelledby="project4Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-eduall p-4">
+                                            <div class="modal-body">
+                                                <div class="row align-items-center g-5">
+                                                    <div class="col-md-9" style="border-right: 1px solid #dededec7;">
+                                                        <h2 class="font-nulshock">MUZARTT</h2>
+                                                        Conceived in response to the lack of accessible therapy and
+                                                        technology for seniors, Muzartt is a mobile application that
+                                                        harnesses the therapeutic power of music and art to enhance the
+                                                        well-being of older individuals. Muzartt's mission is clear: to
+                                                        provide accessible, virtual, and high-quality music and art
+                                                        therapy,
+                                                        partnering with healthcare organizations and caretakers to
+                                                        promote
+                                                        holistic well-being and personal growth among older adults
+                                                        worldwide.
+
+                                                        <div class="row mt-3">
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end mt-3">
+                                                            <button class="btn btn-light py-1" data-bs-dismiss="modal">
+                                                                <i class="bi bi-x"></i>
+                                                                Close
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="mentee-box text-center mb-4">
+                                                            <img loading="lazy" src="https://picsum.photos/120/120"
+                                                                alt="STEM+ Wonderlab" class="w-50 rounded-2"> <br>
+                                                            <small>Claudia Angelica</small>
+                                                        </div>
+                                                        <div class="mentee-box text-center mb-4">
+                                                            <img loading="lazy" src="https://picsum.photos/120/120"
+                                                                alt="STEM+ Wonderlab" class="w-50 rounded-2"> <br>
+                                                            <small>Kenzo Eugenio Tjandra</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card project-card shadow border-0">
+                                    <div class="card-body text-center">
+                                        <div class="d-flex align-items-center h-100 justify-content-center">
+                                            <h4 class="font-nulshock">
+                                                WETHEGENESIS
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
+                                        data-bs-toggle="modal" data-bs-target="#project5">
+                                        Read More
+                                    </div>
+                                </div>
+
+                                <!-- Modal  -->
+                                <div class="modal modal-lg fade" id="project5" tabindex="-1"
+                                    aria-labelledby="project5Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-eduall p-4">
+                                            <div class="modal-body">
+                                                <div class="row align-items-center g-5">
+                                                    <div class="col-md-9" style="border-right: 1px solid #dededec7;">
+                                                        <h2 class="font-nulshock">WETHEGENESIS</h2>
+                                                        Established in 2020, We The Genesis is a youth-to-youth media
+                                                        initiative devoted to magnifying youthful dreams, sparking
+                                                        creativity, and igniting empathetic ambition. Our platform
+                                                        empowers
+                                                        the younger generation as it encourages self-discovery, promotes
+                                                        positive change, and fosters empathy through diverse
+                                                        perspectives.
+                                                        Through thought-provoking content, We The Genesis nurtures
+                                                        action
+                                                        and empathy, empowering youth to play a vital role in building
+                                                        an
+                                                        inclusive and informed society.
+
+                                                        <div class="row mt-3">
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end mt-3">
+                                                            <button class="btn btn-light py-1" data-bs-dismiss="modal">
+                                                                <i class="bi bi-x"></i>
+                                                                Close
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="mentee-box text-center mb-4">
+                                                            <img loading="lazy" src="https://picsum.photos/120/120"
+                                                                alt="STEM+ Wonderlab" class="w-50 rounded-2"> <br>
+                                                            <small>Danya Tjokroadi</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card project-card shadow border-0">
+                                    <div class="card-body text-center">
+                                        <div class="d-flex align-items-center h-100 justify-content-center">
+                                            <h4 class="font-nulshock">
+                                                GREEN ARCHIVE
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
+                                        data-bs-toggle="modal" data-bs-target="#project6">
+                                        Read More
+                                    </div>
+                                </div>
+
+                                <!-- Modal  -->
+                                <div class="modal modal-lg fade" id="project6" tabindex="-1"
+                                    aria-labelledby="project6Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-eduall p-4">
+                                            <div class="modal-body">
+                                                <div class="row align-items-center g-5">
+                                                    <div class="col-md-9" style="border-right: 1px solid #dededec7;">
+                                                        <h2 class="font-nulshock">GREEN ARCHIVE</h2>
+                                                        The Green Archive was created to increase awareness regarding
+                                                        the
+                                                        urgency of climate change, and also provide a specially-designed
+                                                        tote bag as an alternative to plastic bags in hopes of reducing
+                                                        plastic waste. Through the gamification feature, it could help
+                                                        motivate people to actually take action against global warming
+                                                        and
+                                                        integrate those simple actions into their daily lifestyle.
+
+                                                        <div class="row mt-3">
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end mt-3">
+                                                            <button class="btn btn-light py-1" data-bs-dismiss="modal">
+                                                                <i class="bi bi-x"></i>
+                                                                Close
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="mentee-box text-center mb-4">
+                                                            <img loading="lazy" src="https://picsum.photos/120/120"
+                                                                alt="STEM+ Wonderlab" class="w-50 rounded-2"> <br>
+                                                            <small>Stephanie Sastra</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card project-card shadow border-0">
+                                    <div class="card-body text-center">
+                                        <div class="d-flex align-items-center h-100 justify-content-center">
+                                            <h4 class="font-nulshock">
+                                                HEART4HEART
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-eduall-secondary text-center cursor-pointer"
+                                        data-bs-toggle="modal" data-bs-target="#project7">
+                                        Read More
+                                    </div>
+                                </div>
+
+                                <!-- Modal  -->
+                                <div class="modal modal-lg fade" id="project7" tabindex="-1"
+                                    aria-labelledby="project7Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content bg-eduall p-4">
+                                            <div class="modal-body">
+                                                <div class="row align-items-center g-5">
+                                                    <div class="col-md-9" style="border-right: 1px solid #dededec7;">
+                                                        <h2 class="font-nulshock">HEART4HEART</h2>
+                                                        Heart4Heart is a transformative initiative dedicated to
+                                                        fostering
+                                                        mental health improvement and awareness on a widespread scale.
+                                                        Through Heart4Heart, diverse communities engage in impactful
+                                                        workshops and activities, illuminating the essence of mental
+                                                        well-being. Born out of a realization that individuals often
+                                                        sideline their own mental health amidst life's demands, this
+                                                        project
+                                                        seeks to recalibrate priorities. The project aspires for its
+                                                        workshops and activities to serve as a constructive, enjoyable,
+                                                        and
+                                                        enlightening avenue for individuals to engage in learning about
+                                                        mental health and promoting its awareness.
+
+                                                        <div class="row mt-3">
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <img loading="lazy" src="https://picsum.photos/200/120"
+                                                                    alt="STEM+ Wonderlab" class="w-100 rounded">
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end mt-3">
+                                                            <button class="btn btn-light py-1" data-bs-dismiss="modal">
+                                                                <i class="bi bi-x"></i>
+                                                                Close
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="mentee-box text-center mb-4">
+                                                            <img loading="lazy" src="https://picsum.photos/120/120"
+                                                                alt="STEM+ Wonderlab" class="w-50 rounded-2"> <br>
+                                                            <small>Hanaa Nabina</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="talks" class="position-relative">
+            <div class="container my-5 py-5">
+                <img loading="lazy" src="assets/img/TALKS/talks 1.png" alt="STEM+ Wonderlab"
+                    class="position-absolute start-0 animate__animated animate__shakeY animate__infinite d-md-block d-none"
+                    style="top:-20vh; width: 20%; --animate-duration:20s;">
+                <div class="row justify-content-center px-md-0 px-3">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                        <h1 class="project-title mt-5 font-nulshock">
+                            PARENTING & EDUCATIONAL TALKS
+                        </h1>
+                        <h5 class="mt-4 font-nulshock">
+                            Valuable insights into nurturing youths, equipping parents with the tools needed!
+                        </h5>
+                    </div>
+                    <div class="col-md-8 mt-5">
+                        <div class="mb-3 talks">
+                            <img loading="lazy" src="assets/img/TALKS/Talks 1.webp" alt="STEM+ Wonderlab"
+                                class="w-100 d-md-block d-none">
+                            <img loading="lazy" src="assets/img/TALKS/Talks 1 mobile ver.webp" alt="STEM+ Wonderlab"
+                                class="w-100 d-md-none d-block">
+                        </div>
+                        <div class="mb-3 talks">
+                            <img loading="lazy" src="assets/img/TALKS/Talks 2.webp" alt="STEM+ Wonderlab"
+                                class="w-100 d-md-block d-none">
+                            <img loading="lazy" src="assets/img/TALKS/Talks 2 mobile ver.webp" alt="STEM+ Wonderlab"
+                                class="w-100 d-md-none d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="collaborative">
+            <div class="container">
+                <div class="row justify-content-center py-5 px-md-0 px-3">
+                    <div class="col-md-10 pt-5 text-center">
+                        <h1 class="project-title font-nulshock">COLLABORATIVE <br> REAL-WORLD CHALLENGE</h1>
+                        <h5>
+                            Create simple solutions for real-world problems, with support from non-profit organizations!
+                        </h5>
+                    </div>
+                    <div class="col-md-8 my-3 mt-2 px-md-0 px-4">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-end mb-3 gap-4">
+                                    <h5>With</h5>
+                                    <img loading="lazy" src="assets/img/COLLABORATIVE/Revociety 1.png"
+                                        alt="STEM+ Wonderlab" class="w-25">
+                                </div>
+                                <img loading="lazy" src="assets/img/COLLABORATIVE/Challenge 1.png" alt="STEM+ Wonderlab"
+                                    class="w-100 mt-5 animate__animated animate__pulse animate__infinite"
+                                    style="--animate-duration:10s;">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-end mb-3 gap-4">
+                                    <h5>With</h5>
+                                    <img loading="lazy" src="assets/img/COLLABORATIVE/LOGO WAFCAI PNG.png"
+                                        alt="STEM+ Wonderlab" class="w-25">
+                                </div>
+                                <img loading="lazy" src="assets/img/COLLABORATIVE/Challenge 2.png" alt="STEM+ Wonderlab"
+                                    class="animate__animated animate__pulse animate__infinite animate__delay-5s"
+                                    style="width: 85%; --animate-duration:10s;">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <div id="collaborative">
-        <div class="container">
-            <div class="row justify-content-center py-5 px-md-0 px-3">
-                <div class="col-md-10 pt-5 text-center">
-                    <h1 class="project-title font-nulshock">COLLABORATIVE <br> REAL-WORLD CHALLENGE</h1>
-                    <h5>
-                        Create simple solutions for real-world problems, with support from non-profit organizations!
-                    </h5>
-                </div>
-                <div class="col-md-8 my-3 mt-2 px-md-0 px-4">
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="d-flex justify-content-center align-items-end mb-3 gap-4">
-                                <h5>With</h5>
-                                <img src="assets/img/COLLABORATIVE/Revociety 1.png" alt="" class="w-25">
-                            </div>
-                            <img src="assets/img/COLLABORATIVE/Challenge 1.png" alt=""
-                                class="w-100 mt-5 animate__animated animate__pulse animate__infinite"
-                                style="--animate-duration:10s;">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="d-flex justify-content-center align-items-end mb-3 gap-4">
-                                <h5>With</h5>
-                                <img src="assets/img/COLLABORATIVE/LOGO WAFCAI PNG.png" alt="" class="w-25">
-                            </div>
-                            <img src="assets/img/COLLABORATIVE/Challenge 2.png" alt=""
-                                class="animate__animated animate__pulse animate__infinite animate__delay-5s"
-                                style="width: 85%; --animate-duration:10s;">
-                        </div>
+        <div id="stem-based">
+            <div class="container">
+                <div class="row justify-content-center py-5 px-md-0 px-3">
+                    <div class="col-md-8 text-center py-5 mb-5">
+                        <h1 class="project-title font-nulshock">
+                            STEM-BASED TOOLS DEMONSTRATION
+                        </h1>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                    <div class="col-md-10 mb-5">
+                        <div class="row g-3">
+                            <div class="col-md-5 position-relative">
+                                <img loading="lazy" src="assets/img/STEM/Frame.png" alt="STEM+ Wonderlab"
+                                    class="position-absolute z-0" style="top:-10%; left: -0%; width: 105%;">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card bg-eduall w-75 rounded-4 stem-box">
 
-    <div id="stem-based">
-        <div class="container">
-            <div class="row justify-content-center py-5 px-md-0 px-3">
-                <div class="col-md-8 text-center py-5 mb-5">
-                    <h1 class="project-title font-nulshock">
-                        STEM-BASED TOOLS DEMONSTRATION
-                    </h1>
-                </div>
-                <div class="col-md-10 mb-5">
-                    <div class="row g-3">
-                        <div class="col-md-5 position-relative">
-                            <img src="assets/img/STEM/Frame.png" alt="" class="position-absolute z-0"
-                                style="top:-10%; left: -0%; width: 105%;">
-                            <div class="d-flex justify-content-center">
-                                <div class="card bg-eduall w-75 rounded-4 stem-box">
-
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-7">
-                            <h5 class="font-nulshock mb-3">
-                                Mechanical Marvels: Discover the World of Automata
-                            </h5>
-                            <p>
-                                Automata are like ancient machines designed to do interesting movements in a repetitive
-                                way, kind of like early robots or artistic sculptures, and they use <strong>gears,
-                                    levers, cams, and other mechanical parts </strong> to create these intricate
-                                motions.
-                            </p>
-                            <p>
-                                The ideas behind automata still affect how we make technology today!
-                            </p>
-                            <div class="card bg-eduall p-3 rounded-4">
-                                <h4>Related field:</h4>
-                                Mechanical Engineering | Robotics | Computer Science | Physics | Design and Arts |
-                                Innovation
-                                and Entrepreneurship
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-10 mb-5 mt-5">
-                    <div class="row g-3">
-                        <div class="col-md-5 position-relative">
-                            <img src="assets/img/STEM/Frame.png" alt="" class="position-absolute z-0"
-                                style="top:-10%; left: -0%; width: 105%;">
-                            <div class="d-flex justify-content-center">
-                                <div class="card bg-eduall w-75 rounded-4 stem-box">
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-7 position-relative">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h5 class="font-nulshock d-inline">
-                                    Wearable Wonders: E-Textiles Unveiled
+                            <div class="col-md-7">
+                                <h5 class="font-nulshock mb-3">
+                                    Mechanical Marvels: Discover the World of Automata
                                 </h5>
-                                <img src="assets/img/SUPPORTED BY LOGO/Bronze/logo RuangQu.webp" alt=""
-                                    style="width: 60px;">
-                            </div>
-                            <p>
-                                E-textiles, or electronic textiles, are clothes that aren't just stylish but also smart.
-                                They can check your health, display important info, and even interact with the world
-                                around you! These special clothes have <strong> threads that conduct electricity and
-                                    sensors,</strong>
-                                making your outfit both useful and trendy.
-                            </p>
-                            <div class="card bg-eduall p-3 rounded-4">
-                                <h4>Related field:</h4>
-                                Textile Design | Electronics | Programming | Problem-Solving | Fashion Design
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-10 mb-5 mt-5">
-                    <div class="row g-3">
-                        <div class="col-md-5 position-relative">
-                            <img src="assets/img/STEM/Frame.png" alt="" class="position-absolute z-0"
-                                style="top:-10%; left: -0%; width: 105%;">
-                            <div class="d-flex justify-content-center">
-                                <div class="card bg-eduall w-75 rounded-4 stem-box">
-
+                                <p>
+                                    Automata are like ancient machines designed to do interesting movements in a
+                                    repetitive
+                                    way, kind of like early robots or artistic sculptures, and they use <strong>gears,
+                                        levers, cams, and other mechanical parts </strong> to create these intricate
+                                    motions.
+                                </p>
+                                <p>
+                                    The ideas behind automata still affect how we make technology today!
+                                </p>
+                                <div class="card bg-eduall p-3 rounded-4">
+                                    <h4>Related field:</h4>
+                                    Mechanical Engineering | Robotics | Computer Science | Physics | Design and Arts |
+                                    Innovation
+                                    and Entrepreneurship
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-7">
-                            <h5 class="font-nulshock mb-3">
-                                Bridge Builders: Explore Engineering with Simple Machines
-                            </h5>
-                            <p>
-                                Simple machines are like the building blocks of more complex systems and play a big role
-                                in our daily lives.
-                            </p>
-                            <p>
-                                They make tasks easier by changing how forces work, allowing us to do things more
-                                conveniently. From their basic origins to their many uses, these machines continue to
-                                shape how we interact with our world and drive technology forward.
-                            </p>
-                            <div class="card bg-eduall p-3 rounded-4">
-                                <h4>Related field:</h4>
-                                Mechanical Engineering | Robotics | Industrial Design | Physics
-                            </div>
-                        </div>
                     </div>
-                </div>
+                    <div class="col-md-10 mb-5 mt-5">
+                        <div class="row g-3">
+                            <div class="col-md-5 position-relative">
+                                <img loading="lazy" src="assets/img/STEM/Frame.png" alt="STEM+ Wonderlab"
+                                    class="position-absolute z-0" style="top:-10%; left: -0%; width: 105%;">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card bg-eduall w-75 rounded-4 stem-box">
 
-                <div class="col-md-10 mb-5 mt-5">
-                    <div class="row g-3">
-                        <div class="col-md-5 position-relative">
-                            <img src="assets/img/STEM/Frame.png" alt="" class="position-absolute z-0"
-                                style="top:-10%; left: -0%; width: 105%;">
-                            <div class="d-flex justify-content-center">
-                                <div class="card bg-eduall w-75 rounded-4 stem-box">
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="col-md-7 position-relative">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="font-nulshock d-inline">
+                                        Wearable Wonders: E-Textiles Unveiled
+                                    </h5>
+                                    <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/logo RuangQu.webp"
+                                        alt="STEM+ Wonderlab" style="width: 60px;">
+                                </div>
+                                <p>
+                                    E-textiles, or electronic textiles, are clothes that aren't just stylish but also
+                                    smart.
+                                    They can check your health, display important info, and even interact with the world
+                                    around you! These special clothes have <strong> threads that conduct electricity and
+                                        sensors,</strong>
+                                    making your outfit both useful and trendy.
+                                </p>
+                                <div class="card bg-eduall p-3 rounded-4">
+                                    <h4>Related field:</h4>
+                                    Textile Design | Electronics | Programming | Problem-Solving | Fashion Design
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-7">
-                            <h5 class="font-nulshock mb-3">
-                                App-tastic Adventures: Unleash Your Inner Developer
-                            </h5>
-                            <p>
-                                App making, also called mobile app development, is like making magic spells for your
-                                smartphone.
-                            </p>
-                            <p>
-                                It's how we <strong>create software for our mobile devices</strong> like phones and
-                                tablets, making them
-                                do all sorts of cool things for us, like games, social stuff, work, and health stuff!
-                            </p>
-                            <div class="card bg-eduall p-3 rounded-4">
-                                <h4>Related field:</h4>
-                                Computer Science | Software Engineering | User Experience (UX) Design | Information
-                                Technology | Business Administration
-                            </div>
-                        </div>
                     </div>
-                </div>
 
-                <div class="col-md-10 mb-5 mt-5">
-                    <div class="row g-3">
-                        <div class="col-md-5 position-relative">
-                            <img src="assets/img/STEM/Frame.png" alt="" class="position-absolute z-0"
-                                style="top:-10%; left: -0%; width: 105%;">
-                            <div class="d-flex justify-content-center">
-                                <div class="card bg-eduall w-75 rounded-4 stem-box">
+                    <div class="col-md-10 mb-5 mt-5">
+                        <div class="row g-3">
+                            <div class="col-md-5 position-relative">
+                                <img loading="lazy" src="assets/img/STEM/Frame.png" alt="STEM+ Wonderlab"
+                                    class="position-absolute z-0" style="top:-10%; left: -0%; width: 105%;">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card bg-eduall w-75 rounded-4 stem-box">
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-7">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h5 class="font-nulshock d-inline">
-                                    Building the Future: Dive into Makeblock Technology
+                            <div class="col-md-7">
+                                <h5 class="font-nulshock mb-3">
+                                    Bridge Builders: Explore Engineering with Simple Machines
                                 </h5>
-                                <img src="assets/img/SUPPORTED BY LOGO/Silver/logo makeblock (1).png" alt=""
-                                    style="width: 120px;">
-                            </div>
-                            <p>
-                                Explore Makeblock, where cool building blocks bring ideas to life. <strong>Learn to
-                                    code,
-                                    design, and make your own robots and gadgets.</strong> It's fun for all ages, from
-                                beginners to
-                                experts.
-                            </p>
-                            <p>
-                                Come see the future of hands-on learning and automation – get ready to code, build, and
-                                have a blast!
-                            </p>
-                            <div class="card bg-eduall p-3 rounded-4">
-                                <h4>Related field:</h4>
-                                Mechanical Engineering | Robotics Programs | STEM Education | Computer Science
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-10 mb-5 mt-5">
-                    <div class="row g-3">
-                        <div class="col-md-5 position-relative">
-                            <img src="assets/img/STEM/Frame.png" alt="" class="position-absolute z-0"
-                                style="top:-10%; left: -0%; width: 105%;">
-                            <div class="d-flex justify-content-center">
-                                <div class="card bg-eduall w-75 rounded-4 stem-box">
-
+                                <p>
+                                    Simple machines are like the building blocks of more complex systems and play a big
+                                    role
+                                    in our daily lives.
+                                </p>
+                                <p>
+                                    They make tasks easier by changing how forces work, allowing us to do things more
+                                    conveniently. From their basic origins to their many uses, these machines continue
+                                    to
+                                    shape how we interact with our world and drive technology forward.
+                                </p>
+                                <div class="card bg-eduall p-3 rounded-4">
+                                    <h4>Related field:</h4>
+                                    Mechanical Engineering | Robotics | Industrial Design | Physics
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-7">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h5 class="font-nulshock d-inline">
-                                    Crafting the Future: Unleash Your Creativity with 3D Printing
+                    <div class="col-md-10 mb-5 mt-5">
+                        <div class="row g-3">
+                            <div class="col-md-5 position-relative">
+                                <img loading="lazy" src="assets/img/STEM/Frame.png" alt="STEM+ Wonderlab"
+                                    class="position-absolute z-0" style="top:-10%; left: -0%; width: 105%;">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card bg-eduall w-75 rounded-4 stem-box">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <h5 class="font-nulshock mb-3">
+                                    App-tastic Adventures: Unleash Your Inner Developer
                                 </h5>
-                                <img src="assets/img/SUPPORTED BY LOGO/Bronze/Evolusi 3D.webp" alt=""
-                                    style="width: 140px;" class="">
+                                <p>
+                                    App making, also called mobile app development, is like making magic spells for your
+                                    smartphone.
+                                </p>
+                                <p>
+                                    It's how we <strong>create software for our mobile devices</strong> like phones and
+                                    tablets, making them
+                                    do all sorts of cool things for us, like games, social stuff, work, and health
+                                    stuff!
+                                </p>
+                                <div class="card bg-eduall p-3 rounded-4">
+                                    <h4>Related field:</h4>
+                                    Computer Science | Software Engineering | User Experience (UX) Design | Information
+                                    Technology | Business Administration
+                                </div>
                             </div>
-                            <p>
-                                Explore the world of 3D printing, a technology that turns digital plans into real stuff
-                                by adding material layer by layer.
-                            </p>
-                            <p>
-                                It's used in lots of fields like space, medicine, and art, changing how we make things!
-                            </p>
-                            <div class="card bg-eduall p-3 rounded-4">
-                                <h4>Related field:</h4>
-                                Mechanical Engineering | Industrial Design | Computer Science | Materials Science |
-                                Digital Arts and Design
+                        </div>
+                    </div>
+
+                    <div class="col-md-10 mb-5 mt-5">
+                        <div class="row g-3">
+                            <div class="col-md-5 position-relative">
+                                <img loading="lazy" src="assets/img/STEM/Frame.png" alt="STEM+ Wonderlab"
+                                    class="position-absolute z-0" style="top:-10%; left: -0%; width: 105%;">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card bg-eduall w-75 rounded-4 stem-box">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="font-nulshock d-inline">
+                                        Building the Future: Dive into Makeblock Technology
+                                    </h5>
+                                    <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Silver/logo makeblock (1).png"
+                                        alt="STEM+ Wonderlab" style="width: 120px;">
+                                </div>
+                                <p>
+                                    Explore Makeblock, where cool building blocks bring ideas to life. <strong>Learn to
+                                        code,
+                                        design, and make your own robots and gadgets.</strong> It's fun for all ages,
+                                    from
+                                    beginners to
+                                    experts.
+                                </p>
+                                <p>
+                                    Come see the future of hands-on learning and automation – get ready to code, build,
+                                    and
+                                    have a blast!
+                                </p>
+                                <div class="card bg-eduall p-3 rounded-4">
+                                    <h4>Related field:</h4>
+                                    Mechanical Engineering | Robotics Programs | STEM Education | Computer Science
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-10 mb-5 mt-5">
+                        <div class="row g-3">
+                            <div class="col-md-5 position-relative">
+                                <img loading="lazy" src="assets/img/STEM/Frame.png" alt="STEM+ Wonderlab"
+                                    class="position-absolute z-0" style="top:-10%; left: -0%; width: 105%;">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card bg-eduall w-75 rounded-4 stem-box">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="font-nulshock d-inline">
+                                        Crafting the Future: Unleash Your Creativity with 3D Printing
+                                    </h5>
+                                    <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/Evolusi 3D.webp"
+                                        alt="STEM+ Wonderlab" style="width: 140px;" class="">
+                                </div>
+                                <p>
+                                    Explore the world of 3D printing, a technology that turns digital plans into real
+                                    stuff
+                                    by adding material layer by layer.
+                                </p>
+                                <p>
+                                    It's used in lots of fields like space, medicine, and art, changing how we make
+                                    things!
+                                </p>
+                                <div class="card bg-eduall p-3 rounded-4">
+                                    <h4>Related field:</h4>
+                                    Mechanical Engineering | Industrial Design | Computer Science | Materials Science |
+                                    Digital Arts and Design
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="stem-learning" class="position-relative">
-        <img src="assets/img/PROJECT SHOWCASE/project-showcase.png" alt=""
-            class="w-25 position-absolute end-0 animate__animated animate__shakeY animate__infinite d-md-block d-none"
-            style="top:-20vh; --animate-duration: 20s;">
-        <div class="container py-5">
-            <div class="row justify-content-center py-5 px-md-0 px-4">
-                <div class="col-md-8 text-center mb-4">
-                    <h1 class="project-title font-nulshock">‘STEM LEARNING LAB’ WORKSHOPS</h1>
-                </div>
-                <div class="col-md-8">
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="stem-learning-logo align-items-end justify-content-center">
-                                <img src="assets/img/SUPPORTED BY LOGO/Silver/logo makeblock (1).png" alt=""
-                                    class="mb-3 w-50">
+        <div id="stem-learning" class="position-relative">
+            <img loading="lazy" src="assets/img/PROJECT SHOWCASE/project-showcase.png" alt="STEM+ Wonderlab"
+                class="w-25 position-absolute end-0 animate__animated animate__shakeY animate__infinite d-md-block d-none"
+                style="top:-20vh; --animate-duration: 20s;">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5 px-md-0 px-4">
+                    <div class="col-md-8 text-center mb-4">
+                        <h1 class="project-title font-nulshock">‘STEM LEARNING LAB’ WORKSHOPS</h1>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="stem-learning-logo align-items-end justify-content-center">
+                                    <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Silver/logo makeblock (1).png"
+                                        alt="STEM+ Wonderlab" class="mb-3 w-50">
+                                </div>
+                                <div class="card p-5 bg-eduall rounded-4" style="height: 350px;">
+                                    <h3 class="font-nulshock text-center">
+                                        Logo
+                                    </h3>
+                                </div>
                             </div>
-                            <div class="card p-5 bg-eduall rounded-4" style="height: 350px;">
-                                <h3 class="font-nulshock text-center">
-                                    Logo
-                                </h3>
+                            <div class="col-md-6">
+                                <div class="stem-learning-logo align-items-end justify-content-center">
+                                    <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/science centre.webp"
+                                        alt="STEM+ Wonderlab" class="h-100">
+                                </div>
+                                <div class="card p-5 bg-eduall rounded-4" style="height: 350px;">
+                                    <h3 class="font-nulshock text-center">
+                                        Logo
+                                    </h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="stem-learning-logo align-items-end justify-content-center">
-                                <img src="assets/img/SUPPORTED BY LOGO/Bronze/science centre.webp" alt="" class="h-100">
+                            <div class="col-md-6">
+                                <div class="stem-learning-logo align-items-end justify-content-center">
+                                    <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/SUTD 1.webp"
+                                        alt="STEM+ Wonderlab" class="mb-3 w-25">
+                                </div>
+                                <div class="card p-5 bg-eduall rounded-4" style="height: 350px;">
+                                    <h3 class="font-nulshock text-center">
+                                        Logo
+                                    </h3>
+                                </div>
                             </div>
-                            <div class="card p-5 bg-eduall rounded-4" style="height: 350px;">
-                                <h3 class="font-nulshock text-center">
-                                    Logo
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="stem-learning-logo align-items-end justify-content-center">
-                                <img src="assets/img/SUPPORTED BY LOGO/Bronze/SUTD 1.webp" alt="" class="mb-3 w-25">
-                            </div>
-                            <div class="card p-5 bg-eduall rounded-4" style="height: 350px;">
-                                <h3 class="font-nulshock text-center">
-                                    Logo
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="stem-learning-logo align-items-end justify-content-center">
-                                <img src="assets/img/SUPPORTED BY LOGO/Bronze/Elocoach.webp" alt="" class="mb-3 w-25">
-                            </div>
-                            <div class="card p-5 bg-eduall rounded-4" style="height: 350px;">
-                                <h3 class="font-nulshock text-center">
-                                    Logo
-                                </h3>
+                            <div class="col-md-6">
+                                <div class="stem-learning-logo align-items-end justify-content-center">
+                                    <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/Elocoach.webp"
+                                        alt="STEM+ Wonderlab" class="mb-3 w-25">
+                                </div>
+                                <div class="card p-5 bg-eduall rounded-4" style="height: 350px;">
+                                    <h3 class="font-nulshock text-center">
+                                        Logo
+                                    </h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <section id="maps" class="bg-eduall position-relative">
-        <img src="assets/img/MAPS/tangan 1.png" alt=""
-            class="position-absolute start-0 animate__animated animate__shakeY animate__infinite d-md-block d-none"
-            style="top:20vh; --animate-duration:20s">
-        <img src="assets/img/MAPS/tangan 3.png" alt=""
-            class="position-absolute end-0 animate__animated animate__shakeY animate__infinite d-md-block d-none"
-            style="top:20vh; --animate-duration:20s">
-        <div class="container">
-            <div class="row justify-content-center py-5">
-                <div class="col-md-8 text-center py-5">
-                    <div class="d-flex gap-3 align-items-end justify-content-center">
-                        <img src="assets/img/HOME/KC STEM+ logo.webp" alt="" class="w-25">
-                        <h1 class="m-0 p-0 font-nulshock" style="color: #F6931E;">FLOOR MAP</h1>
-                    </div>
+        <section id="maps" class="bg-eduall position-relative">
+            <img loading="lazy" src="assets/img/MAPS/tangan 1.png" alt="STEM+ Wonderlab"
+                class="position-absolute start-0 animate__animated animate__shakeY animate__infinite d-md-block d-none"
+                style="top:20vh; --animate-duration:20s">
+            <img loading="lazy" src="assets/img/MAPS/tangan 3.png" alt="STEM+ Wonderlab"
+                class="position-absolute end-0 animate__animated animate__shakeY animate__infinite d-md-block d-none"
+                style="top:20vh; --animate-duration:20s">
+            <div class="container">
+                <div class="row justify-content-center py-5">
+                    <div class="col-md-8 text-center py-5">
+                        <div class="d-flex gap-3 align-items-end justify-content-center">
+                            <img loading="lazy" src="assets/img/HOME/KC STEM+ logo.webp" alt="STEM+ Wonderlab"
+                                class="w-25">
+                            <h1 class="m-0 p-0 font-nulshock" style="color: #F6931E;">FLOOR MAP</h1>
+                        </div>
 
-                    <!-- Maps  -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="form">
-        <div class="container">
-            <div class="row justify-content-center py-5">
-                <div class="col-md-6 text-center pt-5">
-                    <h4 class="font-nulshock">IGNITE YOUR CREATIVITY AND BE THE FUTURE PROBLEM-SOLVERS!</h4>
-                </div>
-                <div class="col-md-8 text-center bg-eduall rounded-4 my-3">
-                    <iframe
-                        src="https://crm-allinedu.com/form/event?event_name=STEM%20Wonderlab%20Registration%20Form&event_type=offline"
-                        height="700" frameborder="0" class="w-100"></iframe>
-                </div>
-                <div class="col-md-6 text-center">
-                    *By submitting this form, you consent to your data being shared with third parties as necessary for
-                    the intended purpose.
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="supported-by" class="d-flex align-items-center">
-        <div class="container">
-            <div class="row justify-content-center mb-4">
-                <div class="col-md-8 text-center">
-                    <h1 class="mb-2 font-nulshock">SUPPORTED BY</h1>
-                </div>
-            </div>
-
-            <div class="row justify-content-center mb-4 px-md-0 px-4 g-2">
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img src="assets/img/SUPPORTED BY LOGO/Gold/Logo KCR.png" alt="" class="w-50">
-                        <img src="assets/img/SUPPORTED BY LOGO/Gold/Omega Logo.png" alt="" class="w-md-100">
+                        <!-- Maps  -->
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="row justify-content-center mb-4 px-md-0 px-4 g-2">
-                <div class="col-md-9">
-                    <div class="row row-cols-md-5 row-cols-3 justify-content-center align-items-center">
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Silver/logo makeblock (1).png" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Silver/cyberspacelogo (1) (1).png" alt=""
-                                class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Silver/LOGO-HANDY CLEAN 1 (1).png" alt=""
-                                class="w-75">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Silver/Logo-Xonce-(Orange).png" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Silver/KALBE CONSUMER HEALTH_1080x1080 (2).png"
-                                alt="" class="w-100">
-                        </div>
+        <section id="form">
+            <div class="container">
+                <div class="row justify-content-center py-5">
+                    <div class="col-md-6 text-center pt-5">
+                        <h4 class="font-nulshock">IGNITE YOUR CREATIVITY AND BE THE FUTURE PROBLEM-SOLVERS!</h4>
+                    </div>
+                    <div class="col-md-8 text-center bg-eduall rounded-4 my-3">
+                        <iframe
+                            src="https://crm-allinedu.com/form/event?event_name=STEM%20Wonderlab%20Registration%20Form&event_type=offline"
+                            frameborder="0" class="w-100 form-embed"></iframe>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        *By submitting this form, you consent to your data being shared with third parties as necessary
+                        for
+                        the intended purpose.
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="row justify-content-center px-md-0 px-4 g-2">
-                <div class="col-md-7">
-                    <div class="row row-cols-md-6 row-cols-4 justify-content-center align-items-center">
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Bronze/SUTD 1.webp" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Bronze/Astro Logo (1).webp" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Bronze/logo gokomodo - kuning hijau.webp" alt=""
-                                class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Bronze/Elocoach.webp" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Bronze/Evolusi 3D.webp" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Bronze/Logo OCBC NISP 1.webp" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Bronze/LOGO WAFCAI PNG.webp" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Bronze/science centre.webp" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Bronze/logo RuangQu.webp" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Bronze/WIUI Logo Circle.webp" alt="" class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Bronze/LOGO Rumah Sahabat Nusantara.webp" alt=""
-                                class="w-100">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/SUPPORTED BY LOGO/Bronze/Logo Prodia 1 1.webp" alt="" class="w-100">
+        <section id="supported-by" class="d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-8 text-center">
+                        <h1 class="mb-2 font-nulshock">SUPPORTED BY</h1>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mb-4 px-md-0 px-4 g-2">
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Gold/Logo KCR.png"
+                                alt="STEM+ Wonderlab" class="w-50">
+                            <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Gold/Omega Logo.png"
+                                alt="STEM+ Wonderlab" class="w-md-100">
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="about-us">
-        <div class="container py-5">
-            <div class="row justify-content-center" data-aos="fade-up">
-                <div class="col-md-7 text-center py-5">
-                    <h1 class="mb-3 font-nulshock">
-                        ABOUT US
-                    </h1>
-                    <h5 class="mb-5">
-                        We are an independent university consultant based in Jakarta, Indonesia.
-                        Our mission is to ensure that students are thriving into the path they aspire to have in the
-                        future.
-                    </h5>
-                    <div class="row row-cols-md-3 row-cols-2">
-                        <div class="col mb-2 text-center">
-                            <div class="icon-img p-2">
-                                <img src="assets/img/ABOUT/Icon_1.png" class="mr-auto ml-auto">
+                <div class="row justify-content-center mb-4 px-md-0 px-4 g-2">
+                    <div class="col-md-9">
+                        <div class="row row-cols-md-5 row-cols-3 justify-content-center align-items-center">
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Silver/logo makeblock (1).png"
+                                    alt="STEM+ Wonderlab" class="w-100">
                             </div>
-                            <p class="icon-desc">100% Students placed<br>at target universities</p>
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Silver/cyberspacelogo (1) (1).png"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Silver/LOGO-HANDY CLEAN 1 (1).png"
+                                    alt="STEM+ Wonderlab" class="w-75">
+                            </div>
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Silver/Logo-Xonce-(Orange).png"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
+                            <div class="col">
+                                <img loading="lazy"
+                                    src="assets/img/SUPPORTED BY LOGO/Silver/KALBE CONSUMER HEALTH_1080x1080 (2).png"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
                         </div>
-                        <div class="col mb-2 text-center">
-                            <div class="icon-img">
-                                <img src="assets/img/ABOUT/Icon_2.png" class="mr-auto ml-auto">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center px-md-0 px-4 g-2">
+                    <div class="col-md-7">
+                        <div class="row row-cols-md-6 row-cols-4 justify-content-center align-items-center">
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/SUTD 1.webp"
+                                    alt="STEM+ Wonderlab" class="w-100">
                             </div>
-                            <p class="icon-desc">More than 40<br>School Clients</p>
-                        </div>
-                        <div class="col mb-2 text-center">
-                            <div class="icon-img">
-                                <img src="assets/img/ABOUT/Icon_3.png" class="mr-auto ml-auto">
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/Astro Logo (1).webp"
+                                    alt="STEM+ Wonderlab" class="w-100">
                             </div>
-                            <p class="icon-desc">More than 1,000<br>Essays Reviewed</p>
-                        </div>
-                        <div class="col mb-2 text-center">
-                            <div class="icon-img">
-                                <img src="assets/img/ABOUT/Icon_4.png" class="mr-auto ml-auto">
+                            <div class="col">
+                                <img loading="lazy"
+                                    src="assets/img/SUPPORTED BY LOGO/Bronze/logo gokomodo - kuning hijau.webp"
+                                    alt="STEM+ Wonderlab" class="w-100">
                             </div>
-                            <p class="icon-desc">More than 50<br>Corporate Partners</p>
-                        </div>
-                        <div class="col mb-2 text-center">
-                            <div class="icon-img">
-                                <img src="assets/img/ABOUT/Icon_5.png" class="mr-auto ml-auto">
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/Elocoach.webp"
+                                    alt="STEM+ Wonderlab" class="w-100">
                             </div>
-                            <p class="icon-desc">150+ Point SAT<br>Score Improvement</p>
-                        </div>
-                        <div class="col mb-2 text-center">
-                            <div class="icon-img">
-                                <img src="assets/img/ABOUT/Icon_6.png" class="mr-auto ml-auto">
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/Evolusi 3D.webp"
+                                    alt="STEM+ Wonderlab" class="w-100">
                             </div>
-                            <p class="icon-desc">More than 1,500<br>Event Participants</p>
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/Logo OCBC NISP 1.webp"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/LOGO WAFCAI PNG.webp"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/science centre.webp"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/logo RuangQu.webp"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/WIUI Logo Circle.webp"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
+                            <div class="col">
+                                <img loading="lazy"
+                                    src="assets/img/SUPPORTED BY LOGO/Bronze/LOGO Rumah Sahabat Nusantara.webp"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
+                            <div class="col">
+                                <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/Bronze/Logo Prodia 1 1.webp"
+                                    alt="STEM+ Wonderlab" class="w-100">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="footer" class="bg-eduall">
-        <div class="container py-4">
-            <div class="row pt-4 px-md-0 px-4">
-                <div class="col-md-4 mb-3">
-                    <img src="assets/img/logo-white.webp" class="lazyload w-50" alt="ALL-in Eduspace">
-                </div>
-                <div class="col-md-3 mb-3">
-                    <i class="bi bi-globe"></i> <a href="#"
-                        class="text-decoration-none text-white">www.all-inedu.com</a>
-                    <br>
-                    <i class="bi bi-instagram"></i> <a href="#"
-                        class="text-decoration-none text-white">@allineduspace</a>
-                </div>
-                <div class="col-md-5 mb-3 ps-md-5">
-                    <i class="bi bi-phone"></i>
-                    <a href="https://wa.me/6281808081363" target="_blank" class="text-decoration-none text-white">+62
-                        818-0808-1363</a> /
-                    <a href="https://wa.me/6287860811413" target="_blank" class="text-decoration-none text-white">+62
-                        878-6081-1413</a>
-                    <br>
-                    <i class="bi bi-envelope"></i> <a href="#"
-                        class="text-decoration-none text-white">info@all-inedu.com</a>
-                </div>
-                <div class="col-md-12">
-                    <hr class="my-2">
-                </div>
-                <div class="col-md-4 mb-3">
-                    Jl Jeruk Kembar Blok Q9, No. 15 <br> Srengseng, Kembangan <br>
-                    Jakarta Barat 11630, Indonesia
-                </div>
-                <div class="col-md-3 mb-3">
-                    #itsALLintheprep <br>
-                    #TakeOnYourFuture
-                </div>
-                <div class="col-md-5 mb-3 ps-md-5">
-                    Copyright © 2023 · ALL-in Eduspace. <br>
-                    All rights reserved.
+        <section id="about-us">
+            <div class="container py-5">
+                <div class="row justify-content-center" data-aos="fade-up">
+                    <div class="col-md-7 text-center py-5">
+                        <h1 class="mb-3 font-nulshock">
+                            ABOUT US
+                        </h1>
+                        <h5 class="mb-5">
+                            We are an independent university consultant based in Jakarta, Indonesia.
+                            Our mission is to ensure that students are thriving into the path they aspire to have in the
+                            future.
+                        </h5>
+                        <div class="row row-cols-md-3 row-cols-2">
+                            <div class="col mb-2 text-center">
+                                <div class="icon-img p-2">
+                                    <img loading="lazy" src="assets/img/ABOUT/Icon_1.png" class="mr-auto ml-auto">
+                                </div>
+                                <p class="icon-desc">100% Students placed<br>at target universities</p>
+                            </div>
+                            <div class="col mb-2 text-center">
+                                <div class="icon-img">
+                                    <img loading="lazy" src="assets/img/ABOUT/Icon_2.png" class="mr-auto ml-auto">
+                                </div>
+                                <p class="icon-desc">More than 40<br>School Clients</p>
+                            </div>
+                            <div class="col mb-2 text-center">
+                                <div class="icon-img">
+                                    <img loading="lazy" src="assets/img/ABOUT/Icon_3.png" class="mr-auto ml-auto">
+                                </div>
+                                <p class="icon-desc">More than 1,000<br>Essays Reviewed</p>
+                            </div>
+                            <div class="col mb-2 text-center">
+                                <div class="icon-img">
+                                    <img loading="lazy" src="assets/img/ABOUT/Icon_4.png" class="mr-auto ml-auto">
+                                </div>
+                                <p class="icon-desc">More than 50<br>Corporate Partners</p>
+                            </div>
+                            <div class="col mb-2 text-center">
+                                <div class="icon-img">
+                                    <img loading="lazy" src="assets/img/ABOUT/Icon_5.png" class="mr-auto ml-auto">
+                                </div>
+                                <p class="icon-desc">150+ Point SAT<br>Score Improvement</p>
+                            </div>
+                            <div class="col mb-2 text-center">
+                                <div class="icon-img">
+                                    <img loading="lazy" src="assets/img/ABOUT/Icon_6.png" class="mr-auto ml-auto">
+                                </div>
+                                <p class="icon-desc">More than 1,500<br>Event Participants</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="footer" class="bg-eduall">
+            <div class="container py-4">
+                <div class="row pt-4 px-md-0 px-4">
+                    <div class="col-md-4 mb-3">
+                        <img loading="lazy" src="assets/img/logo-white.webp" class="lazyload w-50"
+                            alt="ALL-in Eduspace">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <i class="bi bi-globe"></i> <a href="#"
+                            class="text-decoration-none text-white">www.all-inedu.com</a>
+                        <br>
+                        <i class="bi bi-instagram"></i> <a href="#"
+                            class="text-decoration-none text-white">@allineduspace</a>
+                    </div>
+                    <div class="col-md-5 mb-3 ps-md-5">
+                        <i class="bi bi-phone"></i>
+                        <a href="https://wa.me/6281808081363" target="_blank"
+                            class="text-decoration-none text-white">+62
+                            818-0808-1363</a> /
+                        <a href="https://wa.me/6287860811413" target="_blank"
+                            class="text-decoration-none text-white">+62
+                            878-6081-1413</a>
+                        <br>
+                        <i class="bi bi-envelope"></i> <a href="#"
+                            class="text-decoration-none text-white">info@all-inedu.com</a>
+                    </div>
+                    <div class="col-md-12">
+                        <hr class="my-2">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        Jl Jeruk Kembar Blok Q9, No. 15 <br> Srengseng, Kembangan <br>
+                        Jakarta Barat 11630, Indonesia
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        #itsALLintheprep <br>
+                        #TakeOnYourFuture
+                    </div>
+                    <div class="col-md-5 mb-3 ps-md-5">
+                        Copyright © 2023 · ALL-in Eduspace. <br>
+                        All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -1382,6 +1466,24 @@
 
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                Swal.fire({
+                    width: 300,
+                    allowOutsideClick: false,
+                    html: '<img loading="lazy" src="assets/img/HOME/KC STEM+ Logo color.webp" alt="STEM+ Wonderlab" style="width: 200px;">',
+                    didOpen: () => {
+                        Swal.showLoading();
+                    },
+                })
+            } else {
+                Swal.close()
+                $('#stemWonderlab').removeClass('d-none')
+            }
+        };
     </script>
 
     <script>

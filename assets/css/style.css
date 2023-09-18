@@ -218,6 +218,10 @@ p span {
     height: 100vh;
 }
 
+.form-embed {
+    height: 80vh;
+}
+
 #supported-by {
     height: 100vh;
 }
