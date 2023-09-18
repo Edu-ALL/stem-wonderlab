@@ -62,6 +62,10 @@
         font-size: 1em;
     }
 
+    .events-list {
+        font-size: 13px !important;
+    }
+
     .project-title {
         font-size: 1.5em;
     }
