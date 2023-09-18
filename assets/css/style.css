@@ -205,6 +205,12 @@ p span {
     transform: scale(1.03);
 }
 
+.stem-frame {
+    top: -10%;
+    left: -0%;
+    width: 105%;
+}
+
 .stem-box {
     height: 400px;
 }
