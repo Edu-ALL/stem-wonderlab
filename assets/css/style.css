@@ -36,6 +36,22 @@ p span {
     color: white;
 }
 
+.bg-orange {
+    background: #cd7e09;
+}
+
+.bg-pink {
+    background: #dc2f69;
+}
+
+.bg-blue {
+    background: #0000ff;
+}
+
+.bg-green {
+    background: #13e513;
+}
+
 .bg-eduall {
     background: #0c0f38 !important;
     color: white !important;
@@ -51,7 +67,7 @@ p span {
     background: rgb(241, 133, 62);
     background: linear-gradient(90deg, rgba(241, 133, 62, 1) 0%, rgba(235, 87, 59, 1) 35%, rgba(232, 62, 57, 1) 100%);
     color: #fff !important;
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 .img-banner {
@@ -119,6 +135,26 @@ p span {
 
 #what-is-makerspace {
     height: auto;
+}
+
+.box-image {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.box-image img {
+    object-fit: contain;
+    width: 150px;
+    transition: all 0.3s ease-in-out;
+}
+
+.box-skill p {
+    font-size: 15px;
+}
+
+.box-skill:hover .box-image img {
+    transform: scale(1.1);
 }
 
 .cursor-pointer {
@@ -219,6 +255,11 @@ p span {
 .stem-learning-logo {
     display: flex;
     height: 70px;
+}
+
+.stem-title {
+    color: #26afe5;
+    font-size: 1.5em;
 }
 
 #maps {

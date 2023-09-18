@@ -91,4 +91,8 @@
     .stem-box {
         height: 250px;
     }
+
+    .stem-title {
+        font-size: 1.1em;
+    }
   }
