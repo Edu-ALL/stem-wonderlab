@@ -3,6 +3,7 @@
 @font-face {
     font-family: 'nulshock';
     src: url('/assets/font/nulshock-bd.otf');
+    font-display: swap;
 }
 
 body, p {
