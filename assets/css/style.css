@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
 @font-face {
     font-family: 'nulshock';
     src: url('/assets/font/nulshock-bd.otf');
@@ -97,7 +97,7 @@ p span {
 
 .tick {
     padding-bottom: 1em;
-    font-size:1rem;
+    font-size: 1rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
@@ -108,12 +108,12 @@ p span {
     font-size: .3em !important;
     padding: 5px 10px;
     border-radius: 20px;
-    text-align:center;
+    text-align: center;
 }
 
 .tick-group {
-    margin:0.25em;
-    text-align:center;
+    margin: 0.25em;
+    text-align: center;
 }
 
 #what-is-makerspace {
@@ -130,7 +130,7 @@ p span {
 }
 
 .events-list {
-    color:white;
+    color: white;
     font-size: 20px;
     padding: 5px 20px 7px 20px;
     border-radius: 20px;
@@ -240,4 +240,8 @@ p span {
 
 .w-md-100 {
     width: 100%;
+}
+
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+    background: #0c0f38ef;
 }
