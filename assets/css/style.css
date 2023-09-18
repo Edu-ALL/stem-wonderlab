@@ -262,6 +262,10 @@ p span {
     font-size: 1.5em;
 }
 
+.stem-content p {
+    text-align: justify !important;
+}
+
 #maps {
     height: 100vh;
 }
