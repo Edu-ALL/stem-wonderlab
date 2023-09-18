@@ -1,11 +1,11 @@
 #countdown h3 {
     /* color: #0C0E38; */
-    color: #E84339;
+    color: #fff;
 }
 
 #countdown small {
     /* color: #E84339; */
-    color: #0C0E38;
+    color: #afaeae;
 }
 
 @media only screen and (max-width: 600px) {
