@@ -37,19 +37,19 @@ p span {
 }
 
 .bg-orange {
-    background: #cd7e09;
+    background: #FF7701;
 }
 
 .bg-pink {
-    background: #dc2f69;
+    background: #FF0D76;
 }
 
 .bg-blue {
-    background: #0000ff;
+    background: #0000FF;
 }
 
 .bg-green {
-    background: #13e513;
+    background: #13E513;
 }
 
 .bg-eduall {
@@ -117,20 +117,36 @@ p span {
     height: auto;
 }
 
+.box-skill {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
 .box-image {
     display: flex;
     justify-content: center;
-    height: 150px;
+    height: 100%;
 }
 
 .box-image img {
-    object-fit: contain;
-    width: 150px;
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
     transition: all 0.3s ease-in-out;
 }
 
-.box-skill p {
+.box-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
     font-size: 15px;
+    background: #ffffffa9;
+    border-radius: 15px;
+    color: #0c0f38;
 }
 
 .box-skill:hover .box-image img {
