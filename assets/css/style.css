@@ -68,6 +68,7 @@ p span {
     background: linear-gradient(90deg, rgba(241, 133, 62, 1) 0%, rgba(235, 87, 59, 1) 35%, rgba(232, 62, 57, 1) 100%);
     color: #fff !important;
     font-size: 1.2em;
+    cursor: auto !important;
 }
 
 .img-banner {
@@ -245,6 +246,11 @@ p span {
 
 .project-card .card-body {
     height: 150px;
+}
+
+.modal-project .modal-content {
+    max-height: 500px !important;
+    overflow: auto;
 }
 
 .talks img {

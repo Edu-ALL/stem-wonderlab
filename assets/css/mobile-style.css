@@ -55,11 +55,15 @@
         width: 40%;
     }
 
+    .home-subtitle {
+        font-size: .8em !important;
+    }
+
     .btn-eduall {
         background: rgb(241, 133, 62);
         background: linear-gradient(90deg, rgba(241, 133, 62, 1) 0%, rgba(235, 87, 59, 1) 35%, rgba(232, 62, 57, 1) 100%);
         color: #fff !important;
-        font-size: 1em;
+        font-size: .9em;
     }
 
     .box-skill {
