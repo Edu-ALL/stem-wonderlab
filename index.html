@@ -32,7 +32,8 @@
                         style="width: 150px;">
                 </div>
                 <div class="d-md-none d-flex justify-content-end">
-                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav">
                         <i class="text-dark bi bi-list"></i>
                     </button>
                 </div>
@@ -161,7 +162,8 @@
                 <div class="row justify-content-center px-md-0 px-3">
                     <div class="col-md-7 position-relative">
                         <div class="text-center">
-                            <h1 class="font-nulshock mb-4" style="position: relative; z-index: 2;">WHAT IS A MAKERSPACE?</h1>
+                            <h1 class="font-nulshock mb-4" style="position: relative; z-index: 2;">WHAT IS A MAKERSPACE?
+                            </h1>
                             <div class="d-flex justify-content-center">
                                 <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Video stem.webp"
                                     alt="STEM+ Wonderlab" srcset="" class="w-75 cursor-pointer"
@@ -1621,23 +1623,23 @@
             const ref_code = urlParams.get('ref')
             const iframe = $('#frameEmbed').attr('src');
 
-            // if (document.readyState !== "complete") {
-            //     Swal.fire({
-            //         width: 300,
-            //         allowOutsideClick: false,
-            //         html: '<img loading="lazy" src="assets/img/HOME/KC STEM+ Logo color.webp" alt="STEM+ Wonderlab" style="width: 200px;">',
-            //         didOpen: () => {
-            //             Swal.showLoading();
-            //         },
-            //     })
-            // } else {
-            //     Swal.close()
-            $('#stemWonderlab').removeAttr('hidden')
+            if (document.readyState !== "complete") {
+                Swal.fire({
+                    width: 300,
+                    allowOutsideClick: false,
+                    html: '<img loading="lazy" src="assets/img/HOME/KC STEM+ Logo color.webp" alt="STEM+ Wonderlab" style="width: 200px;">',
+                    didOpen: () => {
+                        Swal.showLoading();
+                    },
+                })
+            } else {
+                Swal.close()
+                $('#stemWonderlab').removeAttr('hidden')
 
-            if (ref_code) {
-                $('#frameEmbed').attr('src', iframe + '&ref=' + ref_code)
+                if (ref_code) {
+                    $('#frameEmbed').attr('src', iframe + '&ref=' + ref_code)
+                }
             }
-            // }
         };
     </script>
 
