@@ -206,8 +206,7 @@
                     <div class="col-md-10 my-5">
                         <div class="row row-cols-md-4 row-cols-2 g-3 align-items-stretch" data-aos="fade-up">
                             <div class="col text-center position-relative overflow-hidden">
-                                <div style="--animate-duration:10s"
-                                    class="box-skill bg-orange text-white rounded-4">
+                                <div style="--animate-duration:10s" class="box-skill bg-orange text-white rounded-4">
                                     <div class="box-image">
                                         <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Aset only 1 .webp"
                                             alt="STEM+ Wonderlab" class="w-100">
@@ -216,8 +215,7 @@
                                 </div>
                             </div>
                             <div class="col text-center position-relative overflow-hidden">
-                                <div style="--animate-duration:10s"
-                                    class="box-skill bg-pink text-white rounded-4">
+                                <div style="--animate-duration:10s" class="box-skill bg-pink text-white rounded-4">
                                     <div class="box-image">
                                         <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Aset only 2.webp"
                                             alt="STEM+ Wonderlab" class="w-100">
@@ -226,8 +224,7 @@
                                 </div>
                             </div>
                             <div class="col text-center position-relative overflow-hidden">
-                                <div style="--animate-duration:10s"
-                                    class="box-skill bg-blue text-white rounded-4">
+                                <div style="--animate-duration:10s" class="box-skill bg-blue text-white rounded-4">
                                     <div class="box-image">
                                         <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Aset only 3.webp"
                                             alt="STEM+ Wonderlab" class="w-100">
@@ -236,8 +233,7 @@
                                 </div>
                             </div>
                             <div class="col text-center position-relative overflow-hidden">
-                                <div style="--animate-duration:10s"
-                                    class="box-skill bg-green text-white rounded-4">
+                                <div style="--animate-duration:10s" class="box-skill bg-green text-white rounded-4">
                                     <div class="box-image">
                                         <img loading="lazy" src="assets/img/WHAT IS MAKERSPACE/Aset only 4.webp"
                                             alt="STEM+ Wonderlab" class="w-100">
@@ -1374,7 +1370,7 @@
                     <div class="col-md-8 text-center bg-eduall rounded-4 my-3">
                         <iframe
                             src="https://crm-allinedu.com/form/event?event_name=STEM%20Wonderlab%20Registration%20Form&event_type=offline"
-                            frameborder="0" class="w-100 form-embed"></iframe>
+                            frameborder="0" class="w-100 form-embed" id="frameEmbed"></iframe>
                     </div>
                     <div class="col-md-6 text-center">
                         *By submitting this form, you consent to your data being shared with third parties as necessary
@@ -1612,6 +1608,11 @@
     <script>
 
         document.onreadystatechange = function () {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const ref_code = urlParams.get('ref')
+            const iframe = $('#frameEmbed').attr('src');
+
             if (document.readyState !== "complete") {
                 Swal.fire({
                     width: 300,
@@ -1624,6 +1625,10 @@
             } else {
                 Swal.close()
                 $('#stemWonderlab').removeAttr('hidden')
+
+                if (ref_code) {
+                    $('#frameEmbed').attr('src', iframe + '&ref=' + ref_code)
+                }
             }
         };
     </script>
