@@ -6,6 +6,10 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body, p {
     font-family: 'Roboto', sans-serif !important;
 }
@@ -116,6 +120,11 @@ p span {
 
 #what-is-makerspace {
     height: auto;
+    scroll-margin-top: 10vh;
+}
+
+#events {
+    scroll-margin-top: 8vh;
 }
 
 .box-skill {
@@ -221,6 +230,9 @@ p span {
     color: white;
 }
 
+#projects {
+    scroll-margin-top: 5vh;
+}
 
 .project-title {
     font-size: 4em;
@@ -253,12 +265,29 @@ p span {
     overflow: auto;
 }
 
+#talks {
+    scroll-margin-top: 5vh;
+}
+
 .talks img {
     transition: all .6s ease-in-out;
 }
 
 .talks img:hover {
     transform: scale(1.03);
+}
+
+#collaborative{
+    scroll-margin-top: 0vh;
+}
+
+#stem-based
+{
+    scroll-margin-top: 0vh;
+}
+
+#stem-learning{
+    scroll-margin-top: 5vh;
 }
 
 .stem-frame {
@@ -289,8 +318,12 @@ p span {
     height: 100vh;
 }
 
+#form {
+    scroll-margin-top: -1vh;
+}
+
 .form-embed {
-    height: 80vh;
+    height: 70vh;
 }
 
 #supported-by {

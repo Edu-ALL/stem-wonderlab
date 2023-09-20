@@ -3,8 +3,15 @@
         padding: 0 10px !important;
     }
 
-    .nav-eduall {
-        color: black;
+    #navbarNav ul {
+        padding: 20px 0;
+        height: 100vh;
+        display: list-item;
+    }
+
+    #navbar ul li {
+        padding: 10px 0;
+        border-bottom: 2px solid #dedede;
     }
 
     p {
@@ -84,7 +91,7 @@
     }
 
     .form-embed {
-        height: 100vh;
+        height: 60vh;
     }
     
     #supported-by {
