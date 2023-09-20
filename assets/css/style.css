@@ -144,7 +144,7 @@ p span {
     padding: 10px;
     font-weight: bold;
     font-size: 15px;
-    background: #ffffffa9;
+    background: #ffffffcc;
     border-radius: 15px;
     color: #0c0f38;
 }
@@ -284,7 +284,7 @@ p span {
 }
 
 .form-embed {
-    /* height: 80vh; */
+    height: 80vh;
 }
 
 #supported-by {
