@@ -1370,7 +1370,7 @@
                     <div class="col-md-8 text-center bg-eduall rounded-4 my-3">
                         <iframe
                             src="https://crm-allinedu.com/form/event?event_name=STEM%20Wonderlab%20Registration%20Form&event_type=offline"
-                            frameborder="0" class="w-100 form-embed" id="frameEmbed"></iframe>
+                            frameborder="0" class="w-100 form-embed" id="frameEmbed" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
                     </div>
                     <div class="col-md-6 text-center">
                         *By submitting this form, you consent to your data being shared with third parties as necessary
@@ -1631,6 +1631,10 @@
                 }
             }
         };
+
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
     </script>
 
     <script>
