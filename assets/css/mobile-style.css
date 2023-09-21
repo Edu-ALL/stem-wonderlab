@@ -19,13 +19,13 @@
     }
 
     #home {
-      height: 100vh;
+        height: 100vh;
     }
 
     h3 {
         font-size: 1.2em;
     }
-    
+
     h4 {
         font-size: 1.1em;
     }
@@ -40,21 +40,21 @@
         left: -5vh;
         width: 40%;
     }
-    
+
     .asset-2 {
         position: absolute;
         bottom: -2vh;
         left: -5vh;
         width: 40%;
     }
-    
+
     .asset-3 {
         position: absolute;
         top: -3vh;
         right: -5vh;
         width: 40%;
     }
-    
+
     .asset-4 {
         position: absolute;
         bottom: -2vh;
@@ -93,7 +93,7 @@
     .form-embed {
         height: 60vh;
     }
-    
+
     #supported-by {
         height: auto;
     }
@@ -115,4 +115,4 @@
     .stem-title {
         font-size: .9em;
     }
-  }
+}

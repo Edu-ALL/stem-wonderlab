@@ -40,6 +40,10 @@ p span {
     color: white;
 }
 
+.makerspace-content p b {
+    color: #FA6D40;
+}
+
 .bg-orange {
     background: #FF7701;
 }
@@ -181,12 +185,12 @@ p span {
 }
 
 .border-orange {
-    border: 1px solid #cd7e09;
+    border: 1px solid #FF7701;
     transition: all .5s ease-in-out;
 }
 
 .border-orange:hover {
-    background: #cd7e09;
+    background: #FF7701;
     color: white;
 }
 
@@ -197,37 +201,37 @@ p span {
 
 .border-green:hover {
     background: #13E513;
-    color: white;
+    color: black;
 }
 
 .border-blue {
-    border: 1px solid #6a13e5;
+    border: 1px solid #0000FF;
     transition: all .5s ease-in-out;
 }
 
 .border-blue:hover {
-    background: #6a13e5;
+    background: #0000FF;
     color: white;
 }
 
 .border-pink {
-    border: 1px solid #e51371;
+    border: 1px solid #FF0D76;
     transition: all .5s ease-in-out;
 }
 
 .border-pink:hover {
-    background: #e51371;
+    background: #FF0D76;
     color: white;
 }
 
 .border-yellow {
-    border: 1px solid #736a03;
+    border: 1px solid #ffff00;
     transition: all .5s ease-in-out;
 }
 
 .border-yellow:hover {
-    background: #736a03;
-    color: white;
+    background: #ffff00;
+    color: black;
 }
 
 #projects {
@@ -281,6 +285,21 @@ p span {
     scroll-margin-top: 0vh;
 }
 
+.collaborate-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.collaborate-img {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.collaborate-img:hover {
+    transform: scale(1.1) !important;
+}
+
 #stem-based
 {
     scroll-margin-top: 0vh;
@@ -288,6 +307,15 @@ p span {
 
 #stem-learning{
     scroll-margin-top: 5vh;
+}
+
+.learning img {
+    cursor: pointer !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.learning img:hover {
+    transform: scale(1.05) !important;
 }
 
 .stem-frame {
