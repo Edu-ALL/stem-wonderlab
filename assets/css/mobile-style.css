@@ -94,7 +94,70 @@
         height: 60vh;
     }
 
+    #maps {
+        height: auto;
+    }
+
+    .maps-asset {
+        position: relative;
+        height: 50vh;
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .maps-1 {
+        width: 60% !important;
+        top:15%;
+        left: 10%;
+    }
+
+    .maps1-overflow {
+        position: absolute;
+        cursor: pointer;
+        width: 30%;
+        height: 30%;
+        /* background: rgba(255, 255, 255, 0.775); */
+        top: 100px;
+        left: 100px;
+    }
+
+    .maps-2 {
+        width: 50% !important;
+        top:0;
+        left: 45%;
+    }
+
+    .maps2-overflow {
+        position: absolute;
+        cursor: pointer;
+        width: 50%;
+        height: 30%;
+        /* background: rgba(255, 255, 255, 0.775); */
+        top: 10%;
+        left: 35%;
+    }
+
+    .maps-3 {
+        width: 80% !important;
+        top:13%;
+        left: 48%;
+        z-index: 3;
+    }
+
+    .list-maps{
+        margin-bottom: 50px;
+    }
+    .list-maps div {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+        
+
     #supported-by {
+        height: auto;
+    }
+
+    .bronze .col {
         height: auto;
     }
 

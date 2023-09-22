@@ -326,6 +326,19 @@ p span {
 
 .stem-box {
     height: 400px;
+    overflow: hidden;
+}
+
+.stem-box img{
+    border: 0;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+}
+
+.stem-box img:hover{
+    transform: scale(1.1);
 }
 
 .stem-learning-logo {
@@ -346,6 +359,118 @@ p span {
     height: 100vh;
 }
 
+.maps-asset img {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.maps-asset img:hover,
+.maps-asset img:active {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.maps-1 {
+    position: absolute;
+    width: 400px !important;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+.maps1-overflow {
+    position: absolute;
+    cursor: pointer;
+    width: 250px;
+    height: 150px;
+    /* background: rgba(255, 255, 255, 0.775); */
+    top: 100px;
+    left: 100px;
+    z-index: 5;
+    transform: rotate(40deg);
+}
+
+.maps1-overflow:hover ~ .maps-1 {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.maps-2 {
+    position: absolute;
+    width: 330px !important;
+    top:-100px;
+    left: 234px;
+    z-index: 2;
+}
+
+.maps2-overflow {
+    position: absolute;
+    cursor: pointer;
+    width: 250px;
+    height: 200px;
+    /* background: rgba(255, 255, 255, 0.775); */
+    top: 0px;
+    left: 280px;
+    z-index: 5;
+    transform: rotate(40deg);
+}
+
+.maps2-overflow:hover ~ .maps-2 {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.maps-3 {
+    position: absolute;
+    width: 500px !important;
+    top:0px;
+    left: 260px;
+    z-index: 3;
+}
+
+.maps-3:hover {
+    z-index: 2 !important;
+}
+
+.list-maps div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.badge-maps {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid #e4e4e4;
+    color: #fff;
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.maps1, .maps2, .maps3 {
+    transition: all .3s ease-in-out;
+}
+
+.maps1.active,
+.maps2.active,
+.maps3.active {
+    color : #f18221 !important;
+    font-weight: bold;
+}
+
+.maps1.active .badge-maps,
+.maps2.active .badge-maps,
+.maps3.active .badge-maps {
+    background: #f18221;
+    border: 3px solid #f18221;
+    color : #fff !important;
+    font-weight: bold;
+}
+
 #form {
     scroll-margin-top: -1vh;
 }
@@ -355,7 +480,17 @@ p span {
 }
 
 #supported-by {
-    height: 100vh;
+    height: auto;
+    margin: 50px 0;
+}
+
+.bronze .col {
+    height: 90px;
+}
+
+.bronze .col img {
+    height: 100%;
+    object-fit: cover;
 }
 
 #supported-by img {
