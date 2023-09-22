@@ -1636,23 +1636,23 @@
             const ref_code = urlParams.get('ref')
             const iframe = $('#frameEmbed').attr('src');
 
-            // if (document.readyState !== "complete") {
-            //     Swal.fire({
-            //         width: 300,
-            //         allowOutsideClick: false,
-            //         html: '<img loading="lazy" src="assets/img/HOME/KC STEM+ Logo color.webp" alt="STEM+ Wonderlab" style="width: 200px;">',
-            //         didOpen: () => {
-            //             Swal.showLoading();
-            //         },
-            //     })
-            // } else {
-            //     Swal.close()
-            //     $('#stemWonderlab').removeAttr('hidden')
+            if (document.readyState !== "complete") {
+                Swal.fire({
+                    width: 300,
+                    allowOutsideClick: false,
+                    html: '<img loading="lazy" src="assets/img/HOME/KC STEM+ Logo color.webp" alt="STEM+ Wonderlab" style="width: 200px;">',
+                    didOpen: () => {
+                        Swal.showLoading();
+                    },
+                })
+            } else {
+                Swal.close()
+                $('#stemWonderlab').removeAttr('hidden')
 
-            //     if (ref_code) {
-            //         $('#frameEmbed').attr('src', iframe + '&ref=' + ref_code)
-            //     }
-            // }
+                if (ref_code) {
+                    $('#frameEmbed').attr('src', iframe + '&ref=' + ref_code)
+                }
+            }
         };
 
         function hoverMaps(map) {
