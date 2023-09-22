@@ -161,6 +161,10 @@
         height: auto;
     }
 
+    .silver .col {
+        padding: 0 10px;
+    }
+
     .w-md-100 {
         width: 50%;
     }

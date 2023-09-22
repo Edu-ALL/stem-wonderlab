@@ -499,6 +499,10 @@ p span {
     object-fit: cover;
 }
 
+.silver .col {
+    padding: 0 30px;
+}
+
 #supported-by img {
     transition: all 0.6s ease-in-out;
 }
