@@ -587,7 +587,7 @@ p span {
     background: #f18221;
     border: 3px solid #f18221;
     color: #fff !important;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 #form {
