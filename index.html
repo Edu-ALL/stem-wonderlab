@@ -25,6 +25,11 @@
 
 <body>
     <section id="stemWonderlab">
+        <div class="top-button position-fixed">
+            <a href="#home" class="btn rounded-circle shadow" style="background:#FFFF00;">
+                <i class="bi bi-arrow-up"></i>
+            </a>
+        </div>
         <nav id="navbar" class="navbar navbar-expand-lg bg-eduall fixed-top shadow">
             <div class="container py-md-1 position-relative">
                 <div class="" style="width: 15%;">
@@ -1792,19 +1797,25 @@
 
         $(function () {
             let navbar = $('#navbar')
+            let topButton = $('.top-button')
+            
             $(window).scroll(function () {
                 // Navbar 
                 if (window.matchMedia('(max-width: 768px)').matches) {
                     if ($(window).scrollTop() >= 50) {
                         navbar.addClass('active')
+                        topButton.addClass('active')
                     } else {
                         navbar.removeClass('active')
+                        topButton.removeClass('active')
                     }
                 } else {
                     if ($(window).scrollTop() <= 0) {
                         navbar.removeClass('active')
+                        topButton.removeClass('active')
                     } else if ($(window).scrollTop() >= 0) {
                         navbar.addClass('active')
+                        topButton.addClass('active')
                     }
                 }
             });

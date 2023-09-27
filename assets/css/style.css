@@ -14,6 +14,19 @@ body, p {
     font-family: 'Roboto', sans-serif !important;
 }
 
+.top-button {
+    transition: all .5s ease-in-out;
+    bottom:-100vh;
+    right: 10px;
+    z-index: 99;
+}
+
+.top-button.active {
+    bottom:10px !important;
+}
+
+
+
 .font-nulshock {
     font-family: 'nulshock';
 }
