@@ -566,7 +566,7 @@ p span {
     border-radius: 50%;
     border: 3px solid #e4e4e4;
     color: #fff;
-    padding-top: 3px !important;
+    padding-top: 0px !important;
     transition: all .3s ease-in-out;
 }
 
@@ -578,7 +578,7 @@ p span {
 .maps2.active,
 .maps3.active {
     color: #f18221 !important;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .maps1.active .badge-maps,
