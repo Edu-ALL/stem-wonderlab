@@ -114,6 +114,14 @@
         font-size: 13px !important;
     }
 
+    .event-quest {
+        font-size: .9em;
+    }
+    
+    .quest-box div img {
+        height: 80px;
+    }
+
     .project-title {
         font-size: 1.5em;
     }

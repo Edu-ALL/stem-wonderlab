@@ -181,7 +181,7 @@
         <div class="divider position-absolute overflow-hidden w-100">
             <img src="assets/img/HOME/Aset home 2.webp" alt="STEM+ Wonderlab"
                 class="img-banner position-absolute asset-1">
-            <img src="assets/img/HOME/Aset home 4.webp" alt="STEM+ Wonderlab"
+            <img src="assets/img/HOME/Aset home 4.png" alt="STEM+ Wonderlab"
                 class="img-banner position-absolute asset-2">
         </div>
 
@@ -404,9 +404,36 @@
                                     </div>
                                 </a>
 
-                                <div class="my-5 text-center text-white">
+                                <div class="mt-5 px-md-5 mb-4 text-center event-quest">
                                     Get the full experience of STEM+ Wonderlab and earn prizes by completing the Maker's
-                                    Quest missions! 
+                                    Quest missions!
+                                </div>
+                                <div class="my-3 text-center">
+                                    <div class="bg-light rounded-pill d-inline py-2 px-4">
+                                        <strong>
+                                            Unlock the levels!
+                                        </strong>
+                                    </div>
+                                </div>
+                                <div class="row quest-box mt-4 g-0">
+                                    <div class="col-4">
+                                        <img src="assets/img/WHATS HAPPENING/Level 1 lock.webp" alt=""
+                                            class="w-100 quest-img-1 lock" onmouseenter="hoverQuest(1)">
+                                        <img src="assets/img/WHATS HAPPENING/Level 1 Curious Adventurer.webp" alt=""
+                                            class="w-100 quest-img-1 unlock d-none" onmouseleave="unHoverQuest(1)">
+                                    </div>
+                                    <div class="col-4 pt-4">
+                                        <img src="assets/img/WHATS HAPPENING/Level 2 lock.webp" alt=""
+                                            class="w-100 quest-img-2 lock" onmouseenter="hoverQuest(2)">
+                                        <img src=" assets/img/WHATS HAPPENING/Level 2 Knowledge Seeker.webp" alt=""
+                                            class="w-100 quest-img-2 unlock d-none" onmouseleave="unHoverQuest(2)">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="assets/img/WHATS HAPPENING/Level 3 lock.webp" alt=""
+                                            class="w-100 quest-img-3 lock" onmouseenter="hoverQuest(3)">
+                                        <img src="assets/img/WHATS HAPPENING/Level 3 Innovative researcher.webp" alt=""
+                                            class="w-100 quest-img-3 unlock d-none" onmouseleave="unHoverQuest(3)">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -974,9 +1001,9 @@
                                 class="w-100 d-md-none d-block">
                         </div>
                         <div class="mb-3 talks">
-                            <img loading="lazy" src="assets/img/TALKS/Talks 2.png" alt="STEM+ Wonderlab"
+                            <img loading="lazy" src="assets/img/TALKS/Talks 2.webp" alt="STEM+ Wonderlab"
                                 class="w-100 d-md-block d-none">
-                            <img loading="lazy" src="assets/img/TALKS/Talks 2 mobile ver.png" alt="STEM+ Wonderlab"
+                            <img loading="lazy" src="assets/img/TALKS/Talks 2 mobile ver.webp" alt="STEM+ Wonderlab"
                                 class="w-100 d-md-none d-block">
                         </div>
                     </div>
@@ -1330,7 +1357,7 @@
                                 <div class="d-flex justify-content-center">
                                     <div class="card w-75 border-0 rounded-4 stem-box">
                                         <img src="assets/img/STEM-DEMO/DEMO 5.webp"
-                                            alt="Building the Future: Dive into Makeblock Technology" class="w-100">
+                                            alt="Building the Future: Dive into Robotics Technology" class="w-100">
                                     </div>
                                 </div>
                             </div>
@@ -1338,7 +1365,7 @@
                             <div class="col-md-7 stem-content">
                                 <div class="d-flex justify-content-between gap-4 align-items-center mb-3">
                                     <h5 class="stem-title font-nulshock d-inline">
-                                        Building the Future: <br> Dive into Makeblock Technology
+                                        Building the Future: <br> Dive into Robotics Technology
                                     </h5>
                                     <img loading="lazy" src="assets/img/SUPPORTED BY LOGO/2.Silver/Silver-makeblock.png"
                                         alt="STEM+ Wonderlab">
@@ -1756,7 +1783,7 @@
     </script>
 
     <script>
-
+        // Load Content 
         document.onreadystatechange = function () {
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
@@ -1782,16 +1809,31 @@
             }
         };
 
+        // Hover maps 
         function hoverMaps(map) {
             $('.' + map).addClass('active')
         }
 
+        // Unhover Maps
         function unHoverMaps(map) {
             $('.' + map).removeClass('active')
+        }
+
+        // Hover quest 
+        function hoverQuest(quest) {
+            $('.quest-img-' + quest + '.lock').addClass('d-none');
+            $('.quest-img-' + quest + '.unlock').removeClass('d-none');
+        }
+
+        // Unhover quest 
+        function unHoverQuest(quest) {
+            $('.quest-img-' + quest + '.lock').removeClass('d-none');
+            $('.quest-img-' + quest + '.unlock').addClass('d-none');
         }
     </script>
 
     <script>
+        // Navbar Menu 
         $(function () {
             var navLink = $("#navbarNav");
             navLink.on("click", "a", null, function () {
@@ -1799,6 +1841,7 @@
             });
         });
 
+        // Display Navbar after scrolling 
         $(function () {
             let navbar = $('#navbar')
             let topButton = $('.top-button')

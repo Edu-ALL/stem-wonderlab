@@ -173,6 +173,16 @@ p span {
     scroll-margin-top: 8vh;
 }
 
+.event-quest {
+    color: #FAAF40;
+    font-size: 1.3em;
+}
+
+.quest-box div img {
+    height: 170px;
+    object-fit: contain;
+}
+
 .box-skill {
     height: 250px;
     position: relative;
