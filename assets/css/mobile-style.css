@@ -26,6 +26,22 @@
         font-size: 15px;
     }
 
+    .divider {
+        height: 100vh;
+        z-index: 2;
+        margin-top: -20vh;
+    }
+    
+    .divider .asset-1 {
+        top:8vh; 
+        left: -15%;
+    }
+    
+    .divider .asset-2 {
+        top:0vh; 
+        left: 80%;
+    }
+
     p {
         font-size: 15px;
     }
@@ -48,8 +64,8 @@
 
     .asset-1 {
         position: absolute;
-        top: -2vh;
-        left: -5vh;
+        top: -5vh;
+        left: -8vh;
         width: 40%;
     }
 

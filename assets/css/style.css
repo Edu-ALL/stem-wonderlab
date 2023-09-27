@@ -119,6 +119,22 @@ p span {
     right: -10vh;
 }
 
+.divider {
+    height: 100vh;
+    z-index: 2;
+    margin-top: -40vh;
+}
+
+.divider .asset-1 {
+    top:8vh; 
+    left: -7%;
+}
+
+.divider .asset-2 {
+    top:0vh; 
+    left: 87%;
+}
+
 #home {
     height: 100vh;
     position: relative;
