@@ -363,13 +363,13 @@ p span {
 }
 
 .learning img {
-    cursor: pointer !important;
+    /* cursor: pointer !important; */
     transition: all 0.3s ease-in-out;
 }
 
-.learning img:hover {
+/* .learning img:hover {
     transform: scale(1.05) !important;
-}
+} */
 
 .stem-frame {
     top: -10%;
@@ -451,7 +451,7 @@ p span {
     width: 400px !important;
     opacity: .7;
     top: 0;
-    left: 0;
+    left: -3px;
     z-index: 1;
 }
 
@@ -475,8 +475,8 @@ p span {
 
 .maps-2 {
     position: absolute;
-    width: 330px !important;
-    top: -100px;
+    width: 320px !important;
+    top: -95px;
     left: 234px;
     opacity: .7;
     z-index: 2;
@@ -503,8 +503,8 @@ p span {
 .maps-3 {
     position: absolute;
     width: 500px !important;
-    top: 0px;
-    left: 260px;
+    top: 5px;
+    left: 255px;
     opacity: .7;
     z-index: 3;
 }

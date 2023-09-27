@@ -138,7 +138,7 @@
 
     .maps-1 {
         width: 300px !important;
-        top:80px;
+        top:90px;
         left: 20px;
     }
 
@@ -153,9 +153,10 @@
     }
 
     .maps-2 {
-        width: 260px !important;
-        top:0;
-        left: 195px;
+        width: 245px !important;
+        top:5px;
+        left: 197px;
+        padding-top: 10px;
     }
 
     .maps2-overflow {
@@ -169,10 +170,11 @@
     }
 
     .maps-3 {
-        width: 450px !important;
-        top:50px;
-        left: 200px;
+        width: 400px !important;
+        top:83px;
+        left: 210px;
         z-index: 3;
+        padding-bottom: 20px;
     }
 
     .badge-maps {
