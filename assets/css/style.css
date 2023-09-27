@@ -8,7 +8,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body, p {
     font-family: 'Roboto', sans-serif !important;
@@ -24,6 +24,18 @@ p {
 
 p span {
     color: #FA6D40;
+}
+
+.registration a img {
+    top: -30px;
+    right: 7%;
+    width: 200px;
+}
+
+.registration a div {
+    right: 10.5%;
+    top: 18px;
+    font-size: 24px;
 }
 
 .navbar {
@@ -123,6 +135,7 @@ p span {
 
 
 #what-is-makerspace {
+    background: transparent !important;
     height: auto;
     scroll-margin-top: 10vh;
 }
@@ -163,9 +176,9 @@ p span {
     color: #0c0f38;
 }
 
-.box-skill:hover .box-image img {
-    /* transform: scale(1.1); */
-}
+/* .box-skill:hover .box-image img {
+    transform: scale(1.1);
+} */
 
 .cursor-pointer {
     cursor: pointer;
@@ -257,7 +270,7 @@ p span {
 
 .project-card:hover .card-body {
     background: #0c0f38;
-    color:  #fff;
+    color: #fff;
 }
 
 .project-card .card-body {
@@ -281,8 +294,33 @@ p span {
     transform: scale(1.03);
 }
 
-#collaborative{
+#collaborative {
     scroll-margin-top: 0vh;
+}
+
+.challange h3 {
+    font-size: 2.3em;
+    margin-top: 20px;
+}
+
+.challange h5 {
+    font-size: 1.6em;
+    color: #0c0f38;
+}
+
+.challange button {
+    font-size: 1.3em;
+}
+
+.about img {
+    width: 25%;
+}
+
+.about p {
+    font-size: 1.2em;
+    text-align: justify;
+    padding-bottom: 20px;
+    color: #0c0f38;
 }
 
 .collaborate-icon {
@@ -300,12 +338,11 @@ p span {
     transform: scale(1.1) !important;
 }
 
-#stem-based
-{
+#stem-based {
     scroll-margin-top: 0vh;
 }
 
-#stem-learning{
+#stem-learning {
     scroll-margin-top: 5vh;
 }
 
@@ -329,7 +366,7 @@ p span {
     overflow: hidden;
 }
 
-.stem-box img{
+.stem-box img {
     border: 0;
     border-radius: 10px;
     height: 100%;
@@ -337,7 +374,7 @@ p span {
     transition: all .3s ease-in-out;
 }
 
-.stem-box img:hover{
+.stem-box img:hover {
     transform: scale(1.1);
 }
 
@@ -355,12 +392,31 @@ p span {
     text-align: justify !important;
 }
 
+.stem-content .d-flex img {
+    width: 150px;
+    object-fit: contain;
+}
+
+.content-asset.asset-1 {
+    position: absolute;
+    width: 20%;
+    top: -5%;
+    left: -6%;
+}
+
+.content-asset.asset-2 {
+    position: absolute;
+    width: 20%;
+    top: -10%;
+    left: 85%;
+}
+
 #maps {
     height: auto;
 }
 
 .maps-asset {
-    height: 50vh;
+    height: 65vh;
 }
 
 .maps-asset img {
@@ -378,7 +434,7 @@ p span {
     position: absolute;
     width: 400px !important;
     opacity: .7;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 1;
 }
@@ -395,7 +451,7 @@ p span {
     transform: rotate(40deg);
 }
 
-.maps1-overflow:hover ~ .maps-1 {
+.maps1-overflow:hover~.maps-1 {
     transform: scale(1.01);
     opacity: 1;
     z-index: 4;
@@ -404,7 +460,7 @@ p span {
 .maps-2 {
     position: absolute;
     width: 330px !important;
-    top:-100px;
+    top: -100px;
     left: 234px;
     opacity: .7;
     z-index: 2;
@@ -422,7 +478,7 @@ p span {
     transform: rotate(40deg);
 }
 
-.maps2-overflow:hover ~ .maps-2 {
+.maps2-overflow:hover~.maps-2 {
     transform: scale(1.01);
     opacity: 1;
     z-index: 4;
@@ -431,7 +487,7 @@ p span {
 .maps-3 {
     position: absolute;
     width: 500px !important;
-    top:0px;
+    top: 0px;
     left: 260px;
     opacity: .7;
     z-index: 3;
@@ -482,7 +538,7 @@ p span {
 .maps1.active,
 .maps2.active,
 .maps3.active {
-    color : #f18221 !important;
+    color: #f18221 !important;
     font-weight: bold;
 }
 
@@ -491,7 +547,7 @@ p span {
 .maps3.active .badge-maps {
     background: #f18221;
     border: 3px solid #f18221;
-    color : #fff !important;
+    color: #fff !important;
     font-weight: bold;
 }
 
@@ -525,9 +581,9 @@ p span {
     transition: all 0.6s ease-in-out;
 }
 
-#supported-by img:hover {
+/* #supported-by img:hover {
     transform: scale(1.04);
-}
+} */
 
 .icon-img {
     display: flex;

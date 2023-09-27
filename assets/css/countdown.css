@@ -8,14 +8,22 @@
     color: #afaeae;
 }
 
+#countdown .card {
+    width: 120px;
+}
+
 @media only screen and (max-width: 600px) {
 
     #countdown h3 {
-        font-size: 15px !important;
+        font-size: 12px !important;
     }
 
     #countdown small {
-        font-size: 12px !important;
+        font-size: 10px !important;
+    }
+
+    #countdown .card {
+        width: 60px;
     }
 
 }
