@@ -385,9 +385,17 @@ p span {
     scroll-margin-top: 5vh;
 }
 
+.learning {
+    font-size: 1em;
+    font-weight: 600;
+    color: #26afe5;
+    text-align: center;
+}
+
 .learning img {
     /* cursor: pointer !important; */
     transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
 
 /* .learning img:hover {

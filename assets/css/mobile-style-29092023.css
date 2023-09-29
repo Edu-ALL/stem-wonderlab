@@ -94,6 +94,12 @@
         font-size: .8em !important;
     }
 
+    .learning {
+        font-size: .7em;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
     .btn-eduall {
         background: rgb(241, 133, 62);
         background: linear-gradient(90deg, rgba(241, 133, 62, 1) 0%, rgba(235, 87, 59, 1) 35%, rgba(232, 62, 57, 1) 100%);
@@ -186,24 +192,24 @@
     }
 
     .badge-maps {
-        width: 25px !important;
-        height: 25px !important;
+        width: 28px !important;
+        height: 28px !important;
         padding: 0 !important;
     }
 
     .list-maps div {
         margin-bottom: 10px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .list-maps div b {
-        width: 25% !important;
+        width: 10% !important;
         margin: 0 !important;
         padding: 0 !important;
     }
     
     .list-maps div p {
-        width: 75% !important;
+        width: 90% !important;
         margin: 0;
         padding: 0;
         font-size: .9em !important;
