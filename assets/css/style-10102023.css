@@ -51,16 +51,6 @@ p span {
     font-size: 24px;
 }
 
-.navbar {
-    margin-top: -100vh;
-    transition: ease-in-out;
-    transition-duration: 1s;
-}
-
-.navbar.active {
-    margin-top: 0;
-}
-
 .nav-eduall {
     color: white;
 }
