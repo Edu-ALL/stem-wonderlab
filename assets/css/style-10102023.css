@@ -167,9 +167,12 @@ p span {
     color: rgb(225, 135, 38);
 }
 
+.modal-backdrop {
+    z-index: 10;
+}
+
 
 #what-is-makerspace {
-    background: transparent !important;
     height: auto;
     scroll-margin-top: 10vh;
 }
@@ -301,26 +304,27 @@ p span {
 }
 
 .project-card {
+    border-radius: 20px;
     transition: all 0.4s ease-in-out;
 }
 
 .project-card .card-body {
     cursor: pointer;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 .project-card .card-footer {
     cursor: pointer;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 20px 20px;
     transition: all 0.4s ease-in-out;
 }
 
 .project-card:hover {
-    transform: scale(1.02);
+    /* transform: scale(1.02); */
 }
 
 .project-card .card-body {
-    height: 130px;
+    height: 350px;
 }
 
 .modal-project .modal-content {
