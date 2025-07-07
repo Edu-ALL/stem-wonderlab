@@ -1979,30 +1979,30 @@
 
     <script>
         // Load Content 
-        document.onreadystatechange = function () {
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-            const ref_code = urlParams.get('ref')
-            const iframe = $('#frameEmbed').attr('src');
+        // document.onreadystatechange = function () {
+        //     const queryString = window.location.search;
+        //     const urlParams = new URLSearchParams(queryString);
+        //     const ref_code = urlParams.get('ref')
+        //     const iframe = $('#frameEmbed').attr('src');
 
-            if (document.readyState !== "complete") {
-                Swal.fire({
-                    width: 300,
-                    allowOutsideClick: false,
-                    html: '<img loading="lazy" src="assets/img/HOME/STEM+.png" alt="STEM+ Wonderlab 2025" style="width: 100%;">',
-                    didOpen: () => {
-                        Swal.showLoading();
-                    },
-                })
-            } else {
-                Swal.close()
-                $('#stemWonderlab').removeAttr('hidden')
+        //     if (document.readyState !== "complete") {
+        //         Swal.fire({
+        //             width: 300,
+        //             allowOutsideClick: false,
+        //             html: '<img loading="lazy" src="assets/img/HOME/STEM+.png" alt="STEM+ Wonderlab 2025" style="width: 100%;">',
+        //             didOpen: () => {
+        //                 Swal.showLoading();
+        //             },
+        //         })
+        //     } else {
+        //         Swal.close()
+        //         $('#stemWonderlab').removeAttr('hidden')
 
-                if (ref_code) {
-                    $('#frameEmbed').attr('src', iframe + '&ref=' + ref_code)
-                }
-            }
-        };
+        //         if (ref_code) {
+        //             $('#frameEmbed').attr('src', iframe + '&ref=' + ref_code)
+        //         }
+        //     }
+        // };
 
         // Hover maps 
         function hoverMaps(map) {
