@@ -39,7 +39,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -58,7 +58,7 @@
 <body>
     <section id="stemWonderlab">
         <div class="top-button position-fixed">
-            <a href="https://www.loket.com/event/2025-stem-wonderlab" target="_blank">
+            <a href="https://www.loket.com/event/2025-stem-wonderlab" target="_blank" class="meta-button">
                 <div class="flex items-center group">
                     <div
                         class="bg-gradient-to-r from-[#EF783D] to-[#E83F39] group-hover:scale-[1.05] transition-all ease-in-out text-white rounded-full pl-4 pr-10 py-1">
@@ -96,7 +96,7 @@
                 <div class="flex items-center gap-4">
                     <!-- Button Register (selalu tampil di desktop, tersembunyi di mobile kecuali menu terbuka) -->
                     <a href="https://www.loket.com/event/2025-stem-wonderlab" target="_blank"
-                        class="hidden md:inline-block border-2 border-dashed border-[#F0783D] text-white px-4 py-1 rounded-full bg-[#0C0F38] font-bold transition-all ease-in-out hover:bg-[#F0783D] animate__animated animate__pulse animate__infinite animate__slower">
+                        class="meta-button hidden md:inline-block border-2 border-dashed border-[#F0783D] text-white px-4 py-1 rounded-full bg-[#0C0F38] font-bold transition-all ease-in-out hover:bg-[#F0783D] animate__animated animate__pulse animate__infinite animate__slower">
                         Buy Tickets Here
                         <i class="bi bi-box-arrow-up-right ms-1"></i>
                     </a>
@@ -120,7 +120,7 @@
                 <a href="#talks" class="menu-item block bg-[#120FFD] text-white px-2 py-1 rounded">Talks</a>
                 <a href="#workshop" class="menu-item block bg-[#120FFD] text-white px-2 py-1 rounded">Workshop</a>
                 <a href="https://www.loket.com/event/2025-stem-wonderlab" target="_blank"
-                    class="menu-item bg-[#F0783D]/90 hover:bg-[#F0783D] block text-white text-center rounded px-4 py-2 absolute left-0 top-[80dvh] w-full font-bold hover:scale-[0.99] transition-all ease-in-out">Buy
+                    class="meta-button menu-item bg-[#F0783D]/90 hover:bg-[#F0783D] block text-white text-center rounded px-4 py-2 absolute left-0 top-[80dvh] w-full font-bold hover:scale-[0.99] transition-all ease-in-out">Buy
                     Tickets
                     Here
                     <i class="bi bi-box-arrow-up-right ms-1"></i></a>
@@ -190,7 +190,7 @@
 
                                 <div class="md:hidden block mt-5">
                                     <a href="https://www.loket.com/event/2025-stem-wonderlab" target="_blank"
-                                        class="border-dashed border-2 border-[#FA6D40] hover:bg-[#FA6D40] hover:text-white font-bold text-base rounded-full text-center py-2 px-4 mt-10">
+                                        class="meta-button border-dashed border-2 border-[#FA6D40] hover:bg-[#FA6D40] hover:text-white font-bold text-base rounded-full text-center py-2 px-4 mt-10">
                                         Buy Tickets Here
                                     </a>
                                     <div class="flex justify-center animate__animated animate__pulse animate__infinite">
@@ -1908,7 +1908,7 @@
                                         Education</span>
                                 </p>
                                 <a href="https://www.loket.com/event/2025-stem-wonderlab" target="_blank"
-                                    class="bg-[#FA6D40] text-white font-bold text-2xl rounded-lg block text-center py-2 my-3 w-[95%]">
+                                    class="meta-button bg-[#FA6D40] text-white font-bold text-2xl rounded-lg block text-center py-2 my-3 w-[95%]">
                                     Buy Tickets Here
                                 </a>
 
@@ -2073,6 +2073,16 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
         integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+
+    <script>
+        const buttons = document.getElementsByClassName('meta-button');
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function () {
+                fbq('track', 'Stem+ Click'); // Atau 'CompleteRegistration' jika itu lebih sesuai
+            });
+            
+        }
+    </script>
 
     <script>
         AOS.init();
