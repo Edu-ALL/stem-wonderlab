@@ -36,19 +36,26 @@
 
     <!-- Meta Pixel Code -->
     <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1067393485185284');
-        fbq('track', 'PageView');
+        const params = new URLSearchParams(window.location.search);
+        const channel = params.get('channel');
+
+        if (channel == 'ads') {
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1067393485185284');
+            fbq('track', 'PageView');
+        }
+
+
     </script>
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1067393485185284&ev=PageView&noscript=1" /></noscript>
@@ -163,7 +170,7 @@
                             <div class="col-md-6 md:mb-5">
                                 <button
                                     class="btn btn-lg btn-eduall btn-block w-100 rounded-pill py-1 shadow-lg mt-3 shadow-xl relative md:text-3xl text-base font-bold">
-                                    Powered by Students, Driven by Charity
+                                    Showcasing Student Brilliance, Empowering University Dreams
                                 </button>
                             </div>
                             <div class="col-md-8 text-center mt-2 md:text-2xl text-xl">
@@ -2080,7 +2087,7 @@
             buttons[i].addEventListener('click', function () {
                 fbq('track', 'stemClick');
             });
-            
+
         }
     </script>
 
