@@ -69,19 +69,6 @@
 </head>
 
 <body>
-    <!-- Overlay + Modal -->
-    <div id="myModal" class="fixed inset-0 hidden bg-black bg-opacity-50 flex items-center justify-center z-50">
-        <div class="bg-white rounded-2xl shadow-xl md:w-[30%] w-[95%] relative transform transition-all duration-300 scale-95 opacity-0"
-            id="modalContent">
-            <!-- Tombol close -->
-            <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">
-                ✖
-            </button>
-            
-            <img src="/assets//img/announcement.png" alt="EduALL Announcement" class="w-full rounded-2xl">
-        </div>
-    </div>
-
     <section id="stemWonderlab">
         <div class="top-button position-fixed">
             <a href="https://www.loket.com/event/2025-stem-wonderlab" target="_blank" class="meta-button">
@@ -196,7 +183,7 @@
                                 <div class="row justify-center items-center g-3">
                                     <div class="col-md-3 col-12 md:text-start text-center">
                                         <h6 class="home-subtitle">
-                                            Sat, 30 August 2025 <br>
+                                            Sat, 27 Septemeber 2025 <br>
                                             <span class="d-md-inline d-block">
                                                 10 AM - 5 PM WIB
                                             </span>
@@ -2112,32 +2099,6 @@
 
     <script>
         AOS.init();
-    </script>
-
-    <script>
-        const modal = document.getElementById("myModal");
-        const modalContent = document.getElementById("modalContent");
-
-        function openModal() {
-            modal.classList.remove("hidden");
-            setTimeout(() => {
-                modalContent.classList.remove("scale-95", "opacity-0");
-                modalContent.classList.add("scale-100", "opacity-100");
-            }, 50);
-        }
-
-        function closeModal() {
-            modalContent.classList.remove("scale-100", "opacity-100");
-            modalContent.classList.add("scale-95", "opacity-0");
-            setTimeout(() => {
-                modal.classList.add("hidden");
-            }, 300);
-        }
-
-        // Modal muncul otomatis saat halaman selesai dimuat
-        window.onload = function () {
-            openModal();
-        };
     </script>
 
     <script>
